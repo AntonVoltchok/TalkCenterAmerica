@@ -1,0 +1,452 @@
+.contact-wrapper {
+	margin: 10% 5% 10%;;
+	text-align: center;
+}
+.contact-container {
+	margin: 0 15% -2%;
+} 
+.contact-subhead {	
+	text-align: center;
+}
+
+.instructions {
+	border: 10px solid $darkblue;
+	box-shadow: -7px 7px 0px 0px $pinkred-dull;
+	background-color: $darkblue;
+	padding: 2% 4%;
+	text-align: left;
+	font-family: $h3-font-fam;
+	color: #fff;
+	font-weight: 400;
+	line-height: 1.5em;
+		@include breakpoint(hires) { @include font-size(20px); }
+		@include breakpoint(desktop) { @include font-size(20px); } 
+		@include breakpoint(laptop) { @include font-size(19px); } 
+		@include breakpoint(netbook) { @include font-size(18px); }
+		@include breakpoint(medium) { @include font-size(17px); }
+		@include breakpoint(small) { @include font-size(14px); }
+		@include breakpoint(newp) { @include font-size(12px); }
+		@include breakpoint(oldp) { @include font-size(10px); }
+}
+
+.instructions-bold {
+	font-weight: 700;
+	color: $pinkred;
+}
+ 
+.book-call {
+	display: inline-block;
+	margin-top: -1%;
+	border: 10px double #fff;
+	box-shadow: -4px 4px 0px 0px $pinkred-dull; 
+	border-radius: .5em;
+	background-color: $darkblue;	
+	padding: .6%;
+	color: #fff;
+	font-family: $h3-font-fam;
+	font-weight: 400;
+		@include breakpoint(hires) { @include font-size(25px); }
+		@include breakpoint(desktop) { @include font-size(28px); } 
+		@include breakpoint(laptop) { @include font-size(26px); }
+		@include breakpoint(netbook) { @include font-size(22px); }
+		@include breakpoint(medium) { @include font-size(20px); }
+		@include breakpoint(small) { @include font-size(18px); }
+		@include breakpoint(newp) { @include font-size(14px); }
+		@include breakpoint(oldp) { @include font-size(13px); }	
+	transition: all .5s ease-in-out;
+}
+
+.book-call:hover {
+	border: 10px double $headingblue;
+	border-radius: 1.6em;
+	color: $headingblue;
+	background-color: #fff;
+	transition: all .5s;
+
+		box-shadow: 0px 0px 0px 0px $pinkred-dull;
+}
+
+
+// THE CONTACT FORM POP UP
+
+#content {
+  width: 800px;
+  padding: 50px;
+  margin: 0 auto;
+  display: block;
+  font-size: 1.2em;
+}
+
+#content h2 {
+  line-height: 1.5em;
+}
+
+
+// ----------------------
+// FORM STYLE STARTS HERE
+// ----------------------
+
+
+/* Add curved borders to various elements */
+#contactForm, .statusMessage, input[type="submit"], input[type="button"] {
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;  
+  border-radius: 10px;
+}
+
+
+/* Style for the contact form and status messages */
+#contactForm, .statusMessage {
+  color: #666;
+  background-color: #ebedf2;
+  background: -webkit-gradient( linear, left bottom, left top, color-stop(0,#dfe1e5), color-stop(1, #f2f4fa) );
+  background: -moz-linear-gradient( center bottom, #dfe1e5 0%, #ebedf2 100% );  
+  border: 1px solid #aaa;
+  -moz-box-shadow: 0 0 1em rgba(0, 0, 0, .5);
+  -webkit-box-shadow: 0 0 1em rgba(0, 0, 0, .5);
+  box-shadow: 0 0 1em rgba(0, 0, 0, .5);
+  opacity: .99;
+}
+
+
+/* The form dimensions */
+
+#contactForm {
+  width: 40em;
+  height: 37.7em;
+  padding: 0 1.5em 1.5em 1.5em;
+  margin: 0 auto;
+}
+
+
+/* Position the form in the middle of the window (if JavaScript is enabled) */
+
+#contactForm.positioned {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+
+/* Dimensions and position of the status messages */
+
+.statusMessage {
+  display: none;
+  margin: auto;
+  width: 30em;
+  height: 2em;
+  padding: 1.5em;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.statusMessage p {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* HEADER IS THE TCA LOGO , SMALL VERSION */
+.form-logo-container {
+	margin: 1.5em auto;
+}
+.form-logo {
+	max-width: 30%;
+}
+
+/* Give form elements consistent margin, padding and line height */
+#contactForm ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#contactForm ul li {
+  margin: .9em 0 0 0;
+  padding: 0;
+}
+
+#contactForm input, #contactForm label {
+  line-height: 1em;
+}
+
+
+/* The field labels */
+label {
+  display: block;
+  float: left;
+  clear: left;
+  text-align: right;
+  width: 28%;
+  padding: .4em 0 0 0;
+  margin: .15em .5em 0 0;
+  font-weight: bold;
+	font-family: $p-font-fam;
+}
+
+.form-upcoming {
+	font-weight: 700;
+	font-family: $p-font-fam;	
+	@include font-size(12.5px);
+	color: #8d8d8d;
+}
+
+.form-upcoming p {
+	line-height: 1.5em;
+	margin: 0;
+}
+
+.form-upcoming-head {
+	font-weight: 700;
+	@include font-size(15.6px);
+	color: #666;
+}
+
+/* The fields */
+input, textarea {
+  display: block;
+  margin: 0;
+  padding: .4em;
+  width: 67%;
+  font-family: $p-font-fam;
+  font-size: 1em;
+  border: 1px solid #aaa;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;    
+  border-radius: 5px;
+  -moz-box-shadow: rgba(0,0,0,.2) 0 1px 4px inset;
+  -webkit-box-shadow: rgba(0,0,0,.2) 0 1px 4px inset;
+  box-shadow: rgba(0,0,0,.2) 0 1px 4px inset;
+  background: #fff;
+}
+
+textarea {
+  height: 13em;
+  line-height: 1.5em;
+  resize: none;
+}
+
+
+/* Place a border around focused fields, and hide the inner shadow */
+
+#contactForm *:focus {
+  border: 1px solid $midblue;
+  outline: none;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
+
+/* Display correctly filled-in fields with a green background */
+
+input:valid, textarea:valid {
+  background: #fff;
+}
+
+
+/* The Send and Cancel buttons */
+
+input[type="submit"], input[type="button"] {
+  display: inline-block;
+  margin: 4em -1em 0 2em;
+  width: 7em;
+  padding: .7em;
+  border: 3px solid #fff;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;  
+  border-radius: 7px;
+  -moz-box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+  -webkit-box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+  box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+  color: #fff;
+  background: $headingblue;
+  font-size: 1em;
+  line-height: 1em;
+  font-weight: bold;
+  opacity: .7;
+	@include font-size(18px);
+  -webkit-appearance: none;
+  -moz-transition: opacity .5s;
+  -webkit-transition: opacity .5s;
+  -o-transition: opacity .5s;
+  transition: opacity .5s;
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:active {
+  cursor: pointer;
+  opacity: 1;
+	border-radius: 100px;
+	transition: all .6s;
+}
+input[type="button"]:hover,
+input[type="button"]:active {
+  cursor: pointer;
+  opacity: 1;
+	border-radius: 7px;
+	transition: all .2s;
+}
+
+input[type="submit"]:active, input[type="button"]:active {
+  color: #333;
+  background: #eee;
+  -moz-box-shadow: 0 0 .5em rgba(0, 0, 0, .8) inset;
+  -webkit-box-shadow: 0 0 .5em rgba(0, 0, 0, .8) inset;
+  box-shadow: 0 0 .5em rgba(0, 0, 0, .8) inset;
+}
+
+input[type="button"] {
+  background: $red;
+	width: 2.1em;
+	padding: .29em;
+	font-family: inherit;
+	@include font-size(14px);
+	font-weight: 700;
+	position: relative;
+	top: 0;
+	left: 0;
+	border-radius: 50px;
+	border: 3px solid #fff;
+	text-align: center;
+}
+
+form {
+	position: relative;
+}
+// CHECK BOX
+.span-check-instruct {
+  position: relative;
+	top: .5em;
+	left: .2em;
+	font-family: $p-font-fam;
+}
+
+.checkboxFive {
+	width: 20px;
+	margin: -30px 140px;
+	position: relative;
+}
+.checkboxFive label {
+	cursor: pointer;
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	top: -0.4em;
+  left: -0.1em;
+	background: #eee;
+	border: 1px solid #acacac;
+	border-radius: 6px;
+}
+.checkboxFive label:after {
+	opacity: 0.2;
+	content: '';
+	position: absolute;
+	width: 14px;
+	height: 5px;
+	background: transparent;
+	top: 7px;
+	left: 6px;
+	border: 2.8px solid #000;
+	border-top: none;
+	border-right: none;
+	border-radius: 6px;
+
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+
+/**
+ * Create the hover event of the tick
+ */
+.checkboxFive label:hover::after {
+	opacity: 0.7;
+}
+
+/**
+ * Create the checkbox state for the tick
+ */
+.checkboxFive input[type=checkbox]:checked + label:after {
+	opacity: 1;
+}
+
+// -----------------
+// PAGE BOTTOM BLOCK
+// -----------------
+
+.schedule-triangle {
+	width: 0;
+	height: 0;
+	border-color: #fff transparent transparent transparent;
+	display: inline-block;
+	border-style: solid;
+	border-width: 45px 45px 0 45px;
+	@include breakpoint(mobile-flip) { border-width: 25px 25px 0 25px; }
+}
+.schedule-triangle-position {
+	text-align: center;
+}
+
+
+
+.pagebottom-block {
+	background-color: rgba(237, 237, 237, 0.96); 
+	text-align: center;
+}
+
+.pagebottom-logo-container {
+	text-align: center;
+	margin: 2% 0 2%;
+}
+.page-bottom-logo {
+	max-width: 27%;
+	@include breakpoint(netbook) { max-width: 37%; }
+		@include breakpoint(medium) { max-width: 47%; }
+		@include breakpoint(small) { max-width: 57%; }
+		@include breakpoint(newp) { max-width: 67%; }
+		@include breakpoint(oldp) { max-width: 67%; }	
+	display: inline-block;
+}
+
+.bottom-subhead {
+	color: $headingblue;
+	font-weight: 700;
+	margin: 0;
+}
+.bottom-info {
+	width: 30%;
+	margin: 1% auto;
+	padding-bottom: 3%;
+	font-family: $p-font-fam;
+	color: $midblue;
+		font-weight: 400;
+	line-height: 1.5em;
+		@include breakpoint(hires) { @include font-size(20px); }
+		@include breakpoint(desktop) { @include font-size(18px); } 
+		@include breakpoint(laptop) { @include font-size(17px); } 
+		@include breakpoint(netbook) { @include font-size(15px); }
+		@include breakpoint(medium) { @include font-size(14px); width: 60%; }
+		@include breakpoint(small) { @include font-size(13px); width: 80%; }
+		@include breakpoint(newp) { @include font-size(11px); width: 90%; }
+		@include breakpoint(oldp) { @include font-size(10px); width: 90%; }
+}
+
+.bottom-stripe-light {
+	height: 10px;
+	background-color: rgba(160, 160, 160, 0.18);
+}
+.bottom-stripe {
+	height: 30px;
+	background-color: rgba(116, 116, 116, 0.46);
+}

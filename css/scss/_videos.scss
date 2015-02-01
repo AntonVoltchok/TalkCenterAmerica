@@ -1,0 +1,199 @@
+.video-wrapper {
+ 	margin: 8% 10% 12%;
+ }
+.video-head {
+	color: $headingblue;
+	line-height: 1em;
+	margin: 5% 1% 1% 1%;
+	text-align: center;
+}
+.video-subhead {
+	color: $headingblue;
+	margin: 2% 10% 3%;
+	text-align: center;
+	
+}
+
+//TABS START HERE
+//
+
+.tabs {
+	text-decoration: none;
+	list-style-type:none;
+	text-align: center;
+	position: relative;
+	width: 100%;
+	margin: 0 0 4%;
+	padding: 0;
+}
+
+.tab-boxes a:focus,
+.icon-latest:focus,
+.tab-boxes:focus,
+.tab:focus {
+    outline: 0;
+}
+
+.tab-boxes {
+	display:inline; 
+}
+
+.tab-boxes a {
+	display: inline-block;
+	width: 12%;
+	margin: 1% 1%;
+	@include breakpoint(laptop) { width: 13%; }
+	@include breakpoint(netbook) { width: 13%; }
+	@include breakpoint(medium) { width: 14%; }
+	@include breakpoint(small) { width: 15%; margin: 4% 0 2%; }
+	@include breakpoint(newp) { width: 15%; margin: 4% 0 2%; }
+	@include breakpoint(oldp) { width: 15%; margin: 4% 0 2%; }		
+}
+
+// USE THIS WHEN SWITCHING TO MOBILE VIEW
+// .tab-boxes:nth-child(3):after { content:"\A"; white-space:pre; }
+
+
+.active {
+	-webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+
+}
+
+.tab-wrapper {
+	width: 70%;
+	@include breakpoint(laptop) { width: 75%; }
+	@include breakpoint(netbook) { width: 77%; }
+	@include breakpoint(medium) { width: 82%; }
+	@include breakpoint(small) { width: 90%; }
+	@include breakpoint(newp) { width: 90%; }
+	@include breakpoint(oldp) { width: 90%; }		
+	margin: 0% auto;
+	-webkit-transition: all .9s ease-in-out;
+    -moz-transition: all .9s ease-in-out;
+    -o-transition: all .9s ease-in-out;
+    -ms-transition: all .9s ease-in-out;
+    transition: all .9s ease-in-out;
+	background-color: $darkblue;	
+}
+
+#tab1 {
+	transition: all .8s ease-in-out;
+}
+
+#tab1,
+#tab2,
+#tab3,
+#tab4,
+#tab5,
+#tab6 {
+	-webkit-transition: all .9s ease-in-out;
+    -moz-transition: all .9s ease-in-out;
+    -o-transition: all .9s ease-in-out;
+    -ms-transition: all .9s ease-in-out;
+    transition: all .9s ease-in-out;
+	box-sizing: border-box;
+	border: 5px solid #fff;
+	box-shadow: 0px 0px 0px 7px $red-dull;
+}
+
+.video-tab-head {
+	-webkit-transition: all .9s ease-in-out;
+    -moz-transition: all .9s ease-in-out;
+    -o-transition: all .9s ease-in-out;
+    -ms-transition: all .9s ease-in-out;
+    transition: all .9s ease-in-out;
+	color: $pinkred;
+	text-align: center;
+	box-sizing: border-box;
+	padding: 0;
+	@include font-size(42px);
+	//BREAKPOINTS
+	@include breakpoint(laptop) { @include font-size(35px); }
+	@include breakpoint(netbook) { @include font-size(26px); }
+	@include breakpoint(medium) { @include font-size(22px); }
+	@include breakpoint(small) { @include font-size(18px); }
+	@include breakpoint(newp) { @include font-size(16px); }
+	@include breakpoint(oldp) { @include font-size(15px); }	
+}
+
+.video-tab-links {
+	-webkit-transition: all .9s ease-in-out;
+    -moz-transition: all .9s ease-in-out;
+    -o-transition: all .9s ease-in-out;
+    -ms-transition: all .9s ease-in-out;
+    transition: all .9s ease-in-out;
+	text-align: center;
+	box-sizing: border-box;
+	line-height: 1.4;
+	padding: 0 3% 0%;
+	font-family: $h3-font-fam;
+}
+
+.last-tab-link {
+	padding-bottom: 4%;
+}
+
+
+.icon-latest {
+  text-decoration: none;
+  position: relative;
+  transition: 0.4s;
+  -webkit-appearance: none;
+  cursor: pointer;
+	
+	
+}
+
+.icon-latest:after {
+  content: '';
+  position: absolute;
+  bottom: 0px;
+  left: 10%;
+  width: 80%;
+  height: 40px;
+  opacity: 1;
+  transition: 0.4s;
+  transform: translateY(-20px);
+}
+
+.icon-latest:hover {
+  transform: translateY(-20px);
+}
+
+.icon-latest:hover:after {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.video-end-divider {
+	height: 10px;
+	width: 100%;
+	background-color: $red-dull;
+	position: relative;
+	@include breakpoint(laptop) { margin-top: 20%; }
+	@include breakpoint(netbook) { margin-top: 20%; }
+	@include breakpoint(medium) { margin-top: 20%; }
+	@include breakpoint(small) { margin-top: 20%; }
+	@include breakpoint(newp) { margin-top: 20%; }
+	@include breakpoint(oldp) { margin-top: 20%; }	
+}
+
+.video-triangle {
+	width: 0;
+	height: 0;
+	border-color: $red-dull transparent transparent transparent;
+	display: inline-block;
+	border-style: solid;
+	border-width: 45px 45px 0 45px;
+	@include breakpoint(mobile-flip) { border-width: 25px 25px 0 25px; }
+}
+.video-triangle-position {
+	text-align: center;
+}
+
+
+
+

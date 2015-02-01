@@ -1,0 +1,121 @@
+.schedule-container {
+	border-top: 25px solid rgba(76, 76, 76, 0.22);
+	border-bottom: 25px solid rgba(76, 76, 76, 0.22);
+	@include breakpoint(mobile-flip) {
+		border-top: 15px solid rgba(76, 76, 76, 0.23);
+		border-bottom: 15px solid rgba(76, 76, 76, 0.23); 
+		} 
+}
+
+.video-ratio-box {
+	height: 720px;
+	width: 100%;
+	background-color: #000;
+	display: block;
+	position: relative;
+//MEDIA QUERIES FOR VIDEO BACKGROUND
+	@include breakpoint(hires) { height: 770px; }
+	@include breakpoint(desktop) { height: 710px; }
+	@include breakpoint(laptop) { height: 500px; }
+	@include breakpoint(netbook) { height: 420px; }
+	@include breakpoint(medium) { height: 325px; }
+	@include breakpoint(small) { height: 260px; }
+	@include breakpoint(newp) { height: 200px; }
+	@include breakpoint(oldp) { height: 150px; }
+} 
+
+.schedule-h2 {
+	@include breakpoint(hires) { font-size: 195%; }
+	@include breakpoint(desktop) { font-size: 190%;  }
+	@include breakpoint(laptop) { font-size: 170%; }
+	@include breakpoint(netbook) { font-size: 160%; }
+	@include breakpoint(medium) { font-size: 140%; }
+	@include breakpoint(small) { font-size: 90%; }
+	@include breakpoint(newp) { font-size: 70%; }
+	@include breakpoint(oldp) { font-size: 65%; }
+}
+
+
+.covervid-wrapper {
+    position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.schedule-head {
+    position: absolute;
+    width: 100%;
+    height: 37%;
+    top: -25%;
+    bottom: 0;
+    margin: auto;
+    opacity: .99;
+	text-shadow: 4px 5px 20px #000000;
+	font-family: $h1-font-fam;
+	font-weight: 400;
+    text-align: center;
+	line-height: 1.2;
+	color: #fff;
+	@include breakpoint(hires) { @include font-size(84px); }
+	@include breakpoint(desktop) { @include font-size(64px); }
+	@include breakpoint(laptop) { @include font-size(54px); }
+	@include breakpoint(netbook) { @include font-size(44px); }
+	@include breakpoint(medium) { @include font-size(34px); }
+	@include breakpoint(small) { @include font-size(30px); }
+	@include breakpoint(newp) { @include font-size(26px); }
+	@include breakpoint(oldp) { @include font-size(20px); }
+}
+.schedule-content {
+    position: absolute;
+    top: 10%; 
+	left: 0;
+    bottom: 0; 
+	right: 0;
+    width: 80%;
+	margin: auto;
+    height: 18%;
+	z-index: 11;
+	text-align: center;
+	color: red;
+}
+.schedule-dates {
+	color: #fff;
+	opacity: .99;
+	font-family: $h2-font-fam;
+	font-weight: 400;
+	width: 100%;
+
+}
+.video-content-overlay {
+    background-color: #000;
+    opacity: 0.65;
+    position: absolute;
+    top: 36%; 
+	left: 0;
+    bottom: 0; 
+	right: 0;
+    width: 100%;
+    height: 31%;
+	z-index: 10;
+}
+
+.schedule-triangle {
+	width: 0;
+	height: 0;
+	border-color: rgba(76, 76, 76, 0.23) transparent transparent transparent;
+	display: inline-block;
+	border-style: solid;
+	border-width: 45px 45px 0 45px;
+	@include breakpoint(mobile-flip) { border-width: 25px 25px 0 25px; }
+}
+.schedule-triangle-position {
+	text-align: center;
+}
+
+
+
+

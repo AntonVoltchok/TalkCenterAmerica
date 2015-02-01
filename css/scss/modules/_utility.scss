@@ -1,0 +1,174 @@
+/*********************************************
+	BASE FONT SIZING
+*********************************************/
+
+// BASE FONT SIZE REM CONVERSION
+@function calculateRem($size) {
+  $rem-size: $size / 16px;
+  @return $rem-size * 1rem;
+}
+
+@mixin font-size($size) {
+  font-size: $size;
+  font-size: calculateRem($size);
+}
+
+ 
+
+
+// MEDIA QUERIES MIXIN
+
+
+/*********************************************
+	MIXINS
+*********************************************/
+
+
+
+@mixin breakpoint($point) {
+  @if $point == hires {
+    @media only screen and (min-width: 1921px) and (max-width: 2565px) { @content; }
+  }
+  @else if $point == desktop {
+    @media only screen and (min-width: 1601px) and (max-width: 1920px) { @content; }
+  }  
+  @else if $point == laptop {
+    @media only screen and (min-width: 1281px) and (max-width: 1600px) { @content; }
+  }
+  @else if $point == netbook {
+    @media only screen and (min-width: 1006px) and (max-width: 1280px) { @content; }
+  } 	
+  @else if $point == medium {
+    @media only screen and (min-width: 756px) and (max-width: 1005px) { @content; }
+  }	
+  @else if $point == small {
+    @media only screen and (min-width: 376px) and (max-width: 755px) { @content; }
+  }
+  @else if $point == newp {
+    @media only screen and (min-width: 321px) and (max-width: 375px)  { @content; }
+  }
+  @else if $point == oldp {
+    @media only screen and (max-width: 320px)  { @content; }
+  }	
+  // WIDTH ORDER FOR NONE LAYOUT RESIZING: MEDIUM, MOBILE-FLIP, SMALL, NEWP, OLDP	
+  @else if $point == mobile-flip {
+    @media only screen and (max-width: 768px)  { @content; }
+  }	
+}
+
+
+
+
+
+
+
+// CLEAR FIX: (NICOLAS GALLAGHER'S VERSION OF IT)
+//  throw into a class at the end of properties: @include clearfix;
+@mixin clearfix() {
+    &:before,
+    &:after {
+        content: "";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+// VERTICAL ALIGNMENT MIXIN
+@mixin vertical-align {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+
+
+/*********************************************
+	- 1.0 -  COLOURS
+*********************************************/
+
+	/* Find colour names - http://chir.ag/projects/name-that-color/ */
+	
+	$darkgrey: #484747;
+	
+	$menublue: #1f4c73;
+
+	$lightblue: #beddfc;
+	$lightblue-plus: #a6ddff;
+	$lightmidblue: #67b0f5;
+	$midblue: #3f6c95;
+	$headingblue: #02518c;
+	$darkblue: #14436d;
+	
+	$pinkred-dull: #e86767;
+	$pinkred: #ff8677;
+	$red-dull: #cf6148;
+	$red: #c33a1a;
+	$midred: #9f3818;
+	$deepred: #a30e0e;
+
+
+	
+	
+/*********************************************
+	- 2.0 -  OTHER
+*********************************************/
+
+	
+
+/*********************************************
+	- 3.0 -  TYPOGRAPHY
+*********************************************/
+
+	/* - 3.1. - FONT WEIGHTS
+	------------------------------------------ */
+
+	$weight-light: 100;
+	$weight-regular: 400;
+	$weight-bold: 600;
+	
+	$weight-header: $weight-bold;
+
+	/* - 3.1. - BASE FONTS
+	------------------------------------------ */
+	$h1-font-fam: 'Oswald', sans-serif;
+	$h2-font-fam: 'Roboto Condensed', sans-serif;
+	$h3-font-fam: 'Roboto Slab', serif;
+	$p-font-fam: 'Roboto Slab', serif;
+	
+
+
+
+ ///////////////////////////////
+/* RANDOM FUNCTIONS / MIXINS */
+///////////////////////////////
+
+// mixins - rem fallback - credits: http://zerosixthree.se/
+
+
+
+// mixins - center vertically and/or horizontally an absolute positioned element
+
+@mixin center($xy:xy) {
+  @if $xy == xy {
+    left: 50%;
+    top: 50%;
+    bottom: auto;
+    right: auto;
+    @include transform(translateX(-50%) translateY(-50%));
+  }
+  @else if $xy == x {
+    left: 50%;
+    right: auto;
+    @include transform(translateX(-50%));
+  }
+  @else if $xy == y {
+    top: 50%;
+    bottom: auto;
+    @include transform(translateY(-50%));
+  }
+}
+

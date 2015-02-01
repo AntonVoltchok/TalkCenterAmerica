@@ -1,0 +1,209 @@
+.blog-container {
+	margin: 11% 11% 14%;;
+	text-align: center;
+	@include breakpoint(laptop) { margin: 10% 2% 10%; }
+	@include breakpoint(netbook) { margin: 12% 20% 12%; }
+	@include breakpoint(medium) { margin: 10% 13% 10%; }
+	@include breakpoint(small) { margin: 13% 2% 17%; }
+	@include breakpoint(newp) { margin: 14% 2% 14%; }
+	@include breakpoint(oldp) { margin: 13% 2% 13%; }
+}
+// 	HEADINGS: SEPARATE FROM BLOG BOXES
+.blog-head {
+	color: $headingblue;
+	line-height: 1em;
+	margin: 5% 0 4%;
+}
+
+.blog-subhead {
+	color: $headingblue;
+	margin-bottom: 4%;
+	@include breakpoint(laptop) { margin: 0 3% 4%; }
+	@include breakpoint(netbook) { margin: 0 28% 4%; }
+	@include breakpoint(medium) { margin: 0 30% 4%; }
+	@include breakpoint(small) { margin: 0 25% 4%; }	
+	@include breakpoint(newp) { margin: 0 20% 4.5%; }
+	@include breakpoint(oldp) { margin: 0 20% 4.5%; }
+}
+
+
+// EACH BLOG POST CONTAINED INSIDE A BLOG-BOX CLASS
+.blog-box {
+	display: inline-block;
+	position: relative;
+	vertical-align: top;
+	margin: 1% 1%;
+}
+
+.blog-img {
+	width: 325px;
+	display: block;
+	opacity: 1;
+	-webkit-transition: 0.6s;
+	transition: 0.6s;
+	@include breakpoint(hires) { width: 325px; }
+	@include breakpoint(desktop) { width: 270px; }
+	@include breakpoint(laptop) { width: 270px; }
+	@include breakpoint(netbook) { width: 240px; }
+	@include breakpoint(medium) { width: 230px; }
+	@include breakpoint(small) { width: 220px; }
+	@include breakpoint(newp) { width: 215px; }
+	@include breakpoint(oldp) { width: 215px; }	
+}
+
+.blog-box-body {
+	bottom: 0;
+	left: 0;
+	top: 0;
+	right: 0;
+	opacity: 0;
+	overflow: hidden;
+	padding: 3em 2em;
+	position: absolute;
+	text-align: center;
+	-webkit-transition: 0.6s;
+	transition: 0.6s;
+		@include breakpoint(hires) { padding-top: 2.6em; }
+		@include breakpoint(desktop) { padding-top: 2.6em; }
+		@include breakpoint(laptop) { padding-top: 2.6em; }
+		@include breakpoint(netbook) { padding-top: 2.6em; }
+		@include breakpoint(medium) { padding-top: 2.2em; }
+		@include breakpoint(small) { padding-top: 1.8em; }
+		@include breakpoint(newp) { padding-top: 1.8em; }
+		@include breakpoint(oldp) { padding-top: 1.8em; }
+}
+
+.blog-box-head h2 {
+	color: #fff;
+	opacity: 0;
+	-webkit-transition: 1.4s;
+	transition: 1.4s;	
+		@include breakpoint(hires) { @include font-size(20px); }
+		@include breakpoint(desktop) { @include font-size(19px); }
+		@include breakpoint(laptop) { @include font-size(19px); }
+		@include breakpoint(netbook) { @include font-size(14.5px); }
+		@include breakpoint(medium) { @include font-size(14.5px); margin-bottom: 9%; }
+		@include breakpoint(small) { 
+			@include font-size(14.5px);
+			padding-bottom: 0;
+			margin-bottom: 5px;
+		}
+		@include breakpoint(newp) { 
+			@include font-size(14.5px);
+			padding-bottom: 0;
+			margin-bottom: 5px;
+		}
+		@include breakpoint(oldp) { 
+			@include font-size(14.5px);
+			padding-bottom: 0;
+			margin-bottom: 5px;
+		}
+}
+
+.blog-box-body p {
+	color: #fff;
+	opacity: 0;
+	font-family: $p-font-fam;
+	font-weight: 400;
+	-webkit-transition: all 2.0s;
+	transition: all 2.0s;
+		@include breakpoint(hires) { @include font-size(17px); }
+		@include breakpoint(desktop) { @include font-size(16px); margin-top: -7%; }
+		@include breakpoint(laptop) { @include font-size(16px); margin-top: -7%; }
+		@include breakpoint(netbook) { @include font-size(13px); margin-top: -6%; }
+		@include breakpoint(medium) { @include font-size(13px); margin-top: -4%; }
+		@include breakpoint(small) { @include font-size(13px); }
+		@include breakpoint(newp) { @include font-size(13px); }
+		@include breakpoint(oldp) { @include font-size(13px); }
+	padding-bottom: 0;
+	margin-top: -3%;
+	margin-bottom: 2%;
+}
+
+.cross-overlay {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	opacity: 0;	
+	-webkit-transform: scale(1.3);
+	-ms-transform: scale(1.3);
+	transform: scale(1.3);
+	-webkit-transition: all 0.7s;
+	transition: all 0.7s;	
+}
+
+
+.blog-box:hover .cross-overlay {
+	opacity: .5;
+	-webkit-transform: scale(.93);
+	-ms-transform: scale(.93);
+	transform: scale(.93);
+}
+
+
+.blog-box-body:hover,
+.blog-box-body:hover p,
+.blog-box-body:hover h2 {
+	display: block;
+	opacity: 1;
+	background-color: rgba(20, 67, 109, 1);
+}
+
+.blog-box-body:hover .blog-click {
+	opacity: 1;
+	width: 30%;
+
+}
+
+.blog-click {
+	position: relative;
+	color: $pinkred;
+	opacity: 0;
+	font-family: $p-font-fam;
+	font-weight: 400;
+	-webkit-transition: all 0.7s;
+	transition: all 0.7s;
+		@include breakpoint(hires) { @include font-size(17px); }
+		@include breakpoint(desktop) { @include font-size(16px); }
+		@include breakpoint(laptop) { @include font-size(16px); }
+		@include breakpoint(netbook) { @include font-size(13px); }
+		@include breakpoint(medium) { @include font-size(13px); }
+		@include breakpoint(small) { @include font-size(13px); }
+		@include breakpoint(newp) { @include font-size(13px); }
+		@include breakpoint(oldp) { @include font-size(13px); }
+}
+
+.blog-box-body h2 {
+	margin-top: 0;
+}
+
+.blog-end-divider {
+	height: 10px;
+	width: 100%;
+	background-color: $midblue;
+	position: relative;
+}
+
+.blog-triangle {
+	width: 0;
+	height: 0;
+	border-color: $midblue transparent transparent transparent;
+	display: inline-block;
+	border-style: solid;
+	border-width: 45px 45px 0 45px;
+	@include breakpoint(mobile-flip) { border-width: 25px 25px 0 25px; }
+}
+.blog-triangle-position {
+	text-align: center;
+}
+
+
+
+
+
+
+
+

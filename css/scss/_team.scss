@@ -1,0 +1,279 @@
+// ------------------------ WRAPPER MARGINS --------------------------- //
+.team-wrapper {
+		-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+	margin: 8% 14% 12%;;
+	text-align: center;
+	@include breakpoint(laptop) { margin: 10% 3% 10%; }
+	@include breakpoint(netbook) { margin: 12% 2% 12%; }
+	@include breakpoint(medium) { margin: 10% 3% 10%; }
+	@include breakpoint(small) { margin: 13% 2% 15%; }
+	@include breakpoint(newp) { margin: 14% 1% 14%; }
+	@include breakpoint(oldp) { margin: 13% 1% 13%; }	
+}
+
+.team-subhead {
+	color: #02518c;
+	margin-top: 3%;
+}
+// -------------------- TEAM HEADER/SUB MARGIN ----------------------- //
+.team-header-wrapper {
+		-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+	margin-bottom: 125px;
+	@include breakpoint(laptop) { margin-bottom: 115px; } 
+	@include breakpoint(netbook) { margin-bottom: 105px; }
+	@include breakpoint(medium) { margin-bottom: 95px; }
+	@include breakpoint(small) { margin-bottom: 85px; }
+	@include breakpoint(newp) { margin-bottom: 100px; }
+	@include breakpoint(oldp) { margin-bottom: 100px; }	
+}
+
+
+// ---------------- HEIGHT FROM H1 TO PROFILE PIC ------------------- //
+.profile-box h1 {
+		-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+	margin-top: -25%;
+	line-height: 1;
+	@include breakpoint(desktop) { @include font-size(28px); }
+	@include breakpoint(laptop) {  @include font-size(19px); } 
+	@include breakpoint(netbook) { margin-top: -27%; @include font-size(18px); } 
+	@include breakpoint(medium) { margin-top: -26%; @include font-size(18px); }
+	@include breakpoint(small) { margin-top: -25%; @include font-size(18px); }
+	@include breakpoint(newp) { margin-top: -14%; @include font-size(15px); }
+	@include breakpoint(oldp) { margin-top: -12%; @include font-size(14px); }
+	text-align: center;
+	color: #fff;
+	opacity: .9;
+    -webkit-transition: all .44s ease-in-out;
+    		transition: all .44s ease-in-out;
+}
+.profile-box p {
+		-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+	text-align: center;
+	font-family: $p-font-fam;
+	font-weight: 400;
+	@include breakpoint(desktop) { @include font-size(16px); } 
+	@include breakpoint(laptop) { @include font-size(16px); } 
+	@include breakpoint(netbook) { @include font-size(14px); } 
+	@include breakpoint(medium) { @include font-size(13px); }  
+	@include breakpoint(small) { @include font-size(13px); }
+	@include breakpoint(newp) { @include font-size(13px); }
+	@include breakpoint(oldp) { @include font-size(12px); } 
+	color: $lightblue;
+	opacity: .9;
+	-webkit-transition: all .44s ease-in-out;
+			transition: all .44s ease-in-out;
+}
+
+
+// ------------------ BOX WIDTH AND SPACING --------------------- //
+.profile-box { 	
+		-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+	width: 320px;
+	margin: 20px 25px 100px;
+	@include breakpoint(laptop) { margin: 20px 10px 100px; } 
+	@include breakpoint(netbook) { width: 300px; margin: 20px 10px 100px; }
+	@include breakpoint(medium) { width: 300px; margin: 20px 10px 100px; }	
+	@include breakpoint(small) { width: 240px; margin: 20px 2px 55px; }	
+	@include breakpoint(newp) { width: 240px; margin: 20px 2px 40px; }
+	@include breakpoint(oldp) { width: 240px; margin: 20px 2px 40px; }	
+	position: relative;	
+	display: inline-block;
+	vertical-align: top;
+	text-decoration: none;
+	list-style-type:none;
+	background-color: $midblue;
+    -webkit-transition: all .5s ease-in-out;
+            transition: all .5s ease-in-out;
+}
+
+// ------------------------ BOX HEIGHT --------------------------- //
+.profile-size {
+		-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+	height: 220px;
+	@include breakpoint(laptop) { height: 210px; }	
+	@include breakpoint(netbook) { height: 200px; }	
+	@include breakpoint(medium) { height: 190px; }  
+	@include breakpoint(small) { height: 175px; }
+	@include breakpoint(newp) { height: 170px; }
+	@include breakpoint(oldp) { height: 170px; } 
+	position: relative;
+	border-bottom: 2px solid #fff;
+	margin-bottom: 5%;
+	background-color: $darkblue;
+    -webkit-transition: all .5s ease-in-out;
+            transition: all .5s ease-in-out;
+}
+// NEEDED WRAPPER CLASS FOR EXACT CENTER
+.profile-container {
+	padding: 0;
+}
+
+// ----------------------- IMAGE WIDTH -------------------------- //
+.img-wrapper {
+		-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+	position: relative;
+	display: inline-block;  	
+	width: 180px;
+	@include breakpoint(netbook) { width: 170px; }	
+	@include breakpoint(medium) { width: 160px; }  
+	@include breakpoint(small) { width: 140px; }
+	@include breakpoint(newp) { width: 100px; }
+	@include breakpoint(oldp) { width: 90px; } 
+}
+// ---------------------- IMAGE POSITION ------------------------ //
+.img-position {
+	top: -100px;
+	@include breakpoint(netbook) { top: -100px; }	
+	@include breakpoint(medium) { top: -90px; }  
+	@include breakpoint(small) { top: -70px; }
+	@include breakpoint(newp) { top: -55px; }
+	@include breakpoint(oldp) { top: -45px; } 
+	position: relative;
+	display: inline-block;
+	text-align: center;	
+    -webkit-transition: all .44s ease-in-out;
+            transition: all .44s ease-in-out;
+		-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+}
+.img-wrapper img {
+	max-width: 100%;
+}
+
+// ------------------- OVERLAY BEFORE HOVER---------------------- //
+.profile-overlay {
+		-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+	top: 0px;
+	padding: 0% 3%;
+	@include breakpoint(laptop) { padding: 0% 3%; } 
+	@include breakpoint(netbook) { padding: 0% 9%; } 
+	@include breakpoint(medium) { padding: 0% 3%; }
+	@include breakpoint(small) { padding: 0% 3%; }
+	@include breakpoint(newp) { padding: 0% 3%; } 
+	@include breakpoint(oldp) { padding: 0% 3%; }
+	position: absolute;
+	font-family: $p-font-fam;
+	font-weight: 400;
+	text-align: center; 
+	color: #fff;
+	opacity: 0;
+    -webkit-transition: all .44s ease-in-out;
+            transition: all .44s ease-in-out;	
+
+}
+
+
+// ------------------
+// ON HOVER FUNCTIONS
+// ------------------
+
+.profile-box:hover {
+	background-color: #fff;
+}
+.profile-box:hover .profile-size {
+	background-color: $darkblue;
+}
+
+// --- --- --- IMAGE TRANSITION --- --- ---
+.profile-box:hover .img-position {
+		-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+	top: -170px;
+	opacity: 1;
+	-webkit-transform: rotateX(-90deg);
+	        transform: rotateX(-90deg);
+	@include breakpoint(medium) { 
+		top: -80px;
+		opacity: 0;
+		-webkit-transform: rotateX(0deg);
+	        	transform: rotateX(0deg);		
+	}
+	
+	@include breakpoint(small) { 
+			-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+		top: -80px;
+		opacity: 0;
+		-webkit-transform: rotateX(0deg);
+	        	transform: rotateX(0deg);		
+	}
+	
+	@include breakpoint(newp) { 
+			-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+		top: -80px;
+		opacity: 0;
+		-webkit-transform: rotateX(0deg);
+	        	transform: rotateX(0deg);
+		
+	}
+	@include breakpoint(oldp) { 
+			-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+		top: -80px;
+		opacity: 0;
+		-webkit-transform: rotateX(0deg);
+	        	transform: rotateX(0deg);		
+	}	
+}
+
+// NAME AND TITLE TRANSITION
+.profile-box:hover  p,
+.profile-box:hover  h1 {
+		-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+	opacity: 0;
+	margin-top: 35px;
+	padding: 0;
+	margin-bottom: 0;
+	@include breakpoint(medium) { margin-top: 0px; }
+	@include breakpoint(small) { margin-top: 0px; }
+	@include breakpoint(newp) { margin-top: 0px; }  
+	@include breakpoint(oldp) { margin-top: 0px; }
+}
+
+// PROFILE DESCRIPTION TRANSITION
+.profile-box:hover .profile-overlay {
+		-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+	top: 110px;
+	margin-top: -85px;
+	@include breakpoint(medium) { top: 120px; margin-top: -95px; }
+	@include breakpoint(small) { top: 110px; margin-top: -95px; }
+	@include breakpoint(newp) { top: 110px; margin-top: -95px; } 
+	@include breakpoint(oldp) { top: 110px; margin-top: -95px; }
+	opacity: 1;
+	
+}
+
+
+
+.blog-end-divider {
+	height: 10px;
+	width: 100%;
+	background-color: $midblue;
+	position: relative;
+}
+
+.blog-triangle {
+	
+	width: 0;
+	height: 0;
+	border-color: $midblue transparent transparent transparent;
+	display: inline-block;
+	border-style: solid;
+	border-width: 45px 45px 0 45px;
+	@include breakpoint(mobile-flip) { border-width: 25px 25px 0 25px; }
+}
+.blog-triangle-position {
+	text-align: center;
+}
+

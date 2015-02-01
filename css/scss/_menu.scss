@@ -1,0 +1,146 @@
+.header-stripe {
+	width: 100%;
+	height: 45px;
+	background-color: rgba(237, 237, 237, 0.96);
+	position: fixed;
+	z-index: 999;
+	top: 0;
+	clear: both;
+}
+ 
+.header-logo {
+	float: right;
+	height: 45px;
+	margin-right: 5%;
+	
+	img {
+		float: right;
+		height: auto;
+		max-width: 100%;
+		@include vertical-align();
+		@include breakpoint(laptop) {
+				max-width: 90%;
+				}
+		@include breakpoint(netbook) {
+				max-width: 80%;
+				}
+		@include breakpoint(medium) {
+				max-width: 80%;
+				}	
+		@include breakpoint(small) {
+				max-width: 70%;
+				}
+		@include breakpoint(newp) {
+				max-width: 65%;
+				}	
+		@include breakpoint(oldp) {
+				max-width: 60%;
+				}	
+	}
+}
+
+.ul-nav {
+	font-family: 'Anton', sans-serif;
+	font-weight: 400;
+	@include font-size(22px);
+	text-align: center;
+	list-style-type:none;
+	max-width: 60%;
+	height: 45px;
+	margin: 0 0 0 4%;
+    padding: 0;
+	@include breakpoint(laptop) {
+			max-width: 60%;
+			@include font-size(20px);
+			}
+	@include breakpoint(netbook) {
+			max-width: 65%;
+			@include font-size(17px);
+			}
+	
+}
+.menu-li {
+	width: 11%;
+	float: left;
+	list-style-type: none;
+	@include vertical-align();
+}
+.menu-li:last-child {
+	border-right:none;
+}
+.menu-li a {
+	text-decoration: none;
+	display: block;
+	width:100%;
+	@include breakpoint(laptop) {
+			
+			}
+	@include breakpoint(netbook) {
+			
+			}
+}
+
+a { text-decoration: none; color: #1f4c73; }
+a:visited { text-decoration: none; }
+a:focus { text-decoration: none; }
+a:hover, a:active { text-decoration: none; }
+a:hover { 
+	text-decoration: none; 
+	background-color: rgb(255, 255, 255); 
+	border-radius: 2px; 
+}
+
+
+@media screen and (max-width: 1005px) {
+	#menu {
+		position: absolute;
+		top: 21%;
+		left: 5%;
+		width: 1em;
+		display: block;
+		color: #33558b;
+		font-size: 1.75em;
+		text-align: center;
+		@include breakpoint(newp) {
+				max-width: 65%;
+				}	
+		@include breakpoint(oldp) {
+				max-width: 60%;
+				}	
+	}
+	
+	.fa-chevron {
+		display: none;
+	}
+	#nav.js {
+		display: none;
+	}
+	.ul-nav {
+		max-width:100%;
+		margin: 0;
+	}
+	.menu-li {
+		width:100%;
+		border-right:none;
+		background-color: rgb(226, 226, 226);
+	}
+	.menu-li a {
+		padding: 1%;
+		width: 100%;
+	}
+		
+	a:hover {
+		background-color: #fff;
+	}
+		
+	
+}
+@media screen and (min-width: 1005px) {
+	#menu {
+		display: none;
+	}
+	#menu-icon2 {
+		display: none;
+	}
+}
+

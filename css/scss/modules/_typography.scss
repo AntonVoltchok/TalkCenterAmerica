@@ -1,0 +1,74 @@
+ 
+h1, h2, h3, h4, h5, h6,
+ul, ol, dl,
+fieldset,
+p,
+table,
+pre,
+hr {
+  font-weight: normal;
+  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
+}
+
+h1 {
+	font-family: $h1-font-fam;
+	color: $darkgrey;
+	font-weight: 400;
+	line-height: 1.72em;
+		@include breakpoint(hires) { @include font-size(70px); }
+		@include breakpoint(desktop) { @include font-size(64px); } 
+		@include breakpoint(laptop) { @include font-size(54px); } 
+		@include breakpoint(netbook) { @include font-size(44px); } 
+		@include breakpoint(medium) { @include font-size(34px); } 
+		@include breakpoint(small) { @include font-size(30px); }
+		@include breakpoint(newp) { @include font-size(26px); } 
+		@include breakpoint(oldp) { @include font-size(20px); }
+	}
+
+.h1-subhead {
+	font-family: $h1-font-fam;
+	color: $darkgrey;
+	font-weight: 400;
+	line-height: 1.2 em;
+		@include breakpoint(hires) { @include font-size(36px); }
+		@include breakpoint(desktop) { @include font-size(32px); }
+		@include breakpoint(laptop) { @include font-size(28px); }
+		@include breakpoint(netbook) { @include font-size(24px); }
+		@include breakpoint(medium) { @include font-size(22px); }
+		@include breakpoint(small) { @include font-size(16px); }
+		@include breakpoint(newp) { @include font-size(15px); }
+		@include breakpoint(oldp) { @include font-size(14px); }
+}
+
+
+h2 {
+	line-height: 1.4;
+	color: $lightblue;
+	font-family: $h2-font-fam;
+	font-weight: 400;
+		@include breakpoint(hires) { @include font-size(25px); }
+		@include breakpoint(desktop) { @include font-size(23px); } 
+		@include breakpoint(laptop) { @include font-size(21px); }
+		@include breakpoint(netbook) { @include font-size(19px); }
+		@include breakpoint(medium) { @include font-size(16px); }
+		@include breakpoint(small) { @include font-size(13px); margin-left: 8%; margin-right: 8%;}
+		@include breakpoint(newp) { @include font-size(13px); }
+		@include breakpoint(oldp) { @include font-size(12px); }
+}
+
+h3 {
+	font-family: $h3-font-fam;
+	color: $darkgrey;
+	font-weight: 400;
+	line-height: 1.5 em;
+		@include breakpoint(hires) { @include font-size(36px); }
+		@include breakpoint(desktop) { @include font-size(32px); } 
+		@include breakpoint(laptop) { @include font-size(28px); } 
+		@include breakpoint(netbook) { @include font-size(24px); }
+		@include breakpoint(medium) { @include font-size(22px); }
+		@include breakpoint(small) { @include font-size(18px); }
+		@include breakpoint(newp) { @include font-size(14px); }
+		@include breakpoint(oldp) { @include font-size(10px); }
+}
+

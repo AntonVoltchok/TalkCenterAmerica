@@ -1,0 +1,1078 @@
+/*!
+ * font-awesome-animation - v0.0.6
+ * https://github.com/l-lin/font-awesome-animation
+ * License: MIT
+ */
+@-webkit-keyframes wrench {
+  0% {
+    -webkit-transform: rotate(-12deg);
+    transform: rotate(-12deg);
+  }
+
+  8% {
+    -webkit-transform: rotate(12deg);
+    transform: rotate(12deg);
+  }
+
+  10% {
+    -webkit-transform: rotate(24deg);
+    transform: rotate(24deg);
+  }
+
+  18% {
+    -webkit-transform: rotate(-24deg);
+    transform: rotate(-24deg);
+  }
+
+  20% {
+    -webkit-transform: rotate(-24deg);
+    transform: rotate(-24deg);
+  }
+
+  28% {
+    -webkit-transform: rotate(24deg);
+    transform: rotate(24deg);
+  }
+
+  30% {
+    -webkit-transform: rotate(24deg);
+    transform: rotate(24deg);
+  }
+
+  38% {
+    -webkit-transform: rotate(-24deg);
+    transform: rotate(-24deg);
+  }
+
+  40% {
+    -webkit-transform: rotate(-24deg);
+    transform: rotate(-24deg);
+  }
+
+  48% {
+    -webkit-transform: rotate(24deg);
+    transform: rotate(24deg);
+  }
+
+  50% {
+    -webkit-transform: rotate(24deg);
+    transform: rotate(24deg);
+  }
+
+  58% {
+    -webkit-transform: rotate(-24deg);
+    transform: rotate(-24deg);
+  }
+
+  60% {
+    -webkit-transform: rotate(-24deg);
+    transform: rotate(-24deg);
+  }
+
+  68% {
+    -webkit-transform: rotate(24deg);
+    transform: rotate(24deg);
+  }
+
+  75% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes wrench {
+  0% {
+    -webkit-transform: rotate(-12deg);
+    -ms-transform: rotate(-12deg);
+    transform: rotate(-12deg);
+  }
+
+  8% {
+    -webkit-transform: rotate(12deg);
+    -ms-transform: rotate(12deg);
+    transform: rotate(12deg);
+  }
+
+  10% {
+    -webkit-transform: rotate(24deg);
+    -ms-transform: rotate(24deg);
+    transform: rotate(24deg);
+  }
+
+  18% {
+    -webkit-transform: rotate(-24deg);
+    -ms-transform: rotate(-24deg);
+    transform: rotate(-24deg);
+  }
+
+  20% {
+    -webkit-transform: rotate(-24deg);
+    -ms-transform: rotate(-24deg);
+    transform: rotate(-24deg);
+  }
+
+  28% {
+    -webkit-transform: rotate(24deg);
+    -ms-transform: rotate(24deg);
+    transform: rotate(24deg);
+  }
+
+  30% {
+    -webkit-transform: rotate(24deg);
+    -ms-transform: rotate(24deg);
+    transform: rotate(24deg);
+  }
+
+  38% {
+    -webkit-transform: rotate(-24deg);
+    -ms-transform: rotate(-24deg);
+    transform: rotate(-24deg);
+  }
+
+  40% {
+    -webkit-transform: rotate(-24deg);
+    -ms-transform: rotate(-24deg);
+    transform: rotate(-24deg);
+  }
+
+  48% {
+    -webkit-transform: rotate(24deg);
+    -ms-transform: rotate(24deg);
+    transform: rotate(24deg);
+  }
+
+  50% {
+    -webkit-transform: rotate(24deg);
+    -ms-transform: rotate(24deg);
+    transform: rotate(24deg);
+  }
+
+  58% {
+    -webkit-transform: rotate(-24deg);
+    -ms-transform: rotate(-24deg);
+    transform: rotate(-24deg);
+  }
+
+  60% {
+    -webkit-transform: rotate(-24deg);
+    -ms-transform: rotate(-24deg);
+    transform: rotate(-24deg);
+  }
+
+  68% {
+    -webkit-transform: rotate(24deg);
+    -ms-transform: rotate(24deg);
+    transform: rotate(24deg);
+  }
+
+  75% {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+
+.faa-wrench.animated,
+.faa-wrench.animated-hover:hover,
+.faa-parent.animated-hover:hover > .faa-wrench {
+  -webkit-animation: wrench 2.5s ease infinite;
+  animation: wrench 2.5s ease infinite;
+  transform-origin-x: 90%;
+  transform-origin-y: 35%;
+  transform-origin-z: initial;
+}
+
+.faa-wrench.animated.faa-fast,
+.faa-wrench.animated-hover.faa-fast:hover,
+.faa-parent.animated-hover:hover > .faa-wrench.faa-fast {
+  -webkit-animation: wrench 1.2s ease infinite;
+  animation: wrench 1.2s ease infinite;
+}
+
+.faa-wrench.animated.faa-slow,
+.faa-wrench.animated-hover.faa-slow:hover,
+.faa-parent.animated-hover:hover > .faa-wrench.faa-slow {
+  -webkit-animation: wrench 3.7s ease infinite;
+  animation: wrench 3.7s ease infinite;
+}
+
+/* BELL */
+
+@-webkit-keyframes ring {
+  0% {
+    -webkit-transform: rotate(-15deg);
+    transform: rotate(-15deg);
+  }
+
+  2% {
+    -webkit-transform: rotate(15deg);
+    transform: rotate(15deg);
+  }
+
+  4% {
+    -webkit-transform: rotate(-18deg);
+    transform: rotate(-18deg);
+  }
+
+  6% {
+    -webkit-transform: rotate(18deg);
+    transform: rotate(18deg);
+  }
+
+  8% {
+    -webkit-transform: rotate(-22deg);
+    transform: rotate(-22deg);
+  }
+
+  10% {
+    -webkit-transform: rotate(22deg);
+    transform: rotate(22deg);
+  }
+
+  12% {
+    -webkit-transform: rotate(-18deg);
+    transform: rotate(-18deg);
+  }
+
+  14% {
+    -webkit-transform: rotate(18deg);
+    transform: rotate(18deg);
+  }
+
+  16% {
+    -webkit-transform: rotate(-12deg);
+    transform: rotate(-12deg);
+  }
+
+  18% {
+    -webkit-transform: rotate(12deg);
+    transform: rotate(12deg);
+  }
+
+  20% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes ring {
+  0% {
+    -webkit-transform: rotate(-15deg);
+    -ms-transform: rotate(-15deg);
+    transform: rotate(-15deg);
+  }
+
+  2% {
+    -webkit-transform: rotate(15deg);
+    -ms-transform: rotate(15deg);
+    transform: rotate(15deg);
+  }
+
+  4% {
+    -webkit-transform: rotate(-18deg);
+    -ms-transform: rotate(-18deg);
+    transform: rotate(-18deg);
+  }
+
+  6% {
+    -webkit-transform: rotate(18deg);
+    -ms-transform: rotate(18deg);
+    transform: rotate(18deg);
+  }
+
+  8% {
+    -webkit-transform: rotate(-22deg);
+    -ms-transform: rotate(-22deg);
+    transform: rotate(-22deg);
+  }
+
+  10% {
+    -webkit-transform: rotate(22deg);
+    -ms-transform: rotate(22deg);
+    transform: rotate(22deg);
+  }
+
+  12% {
+    -webkit-transform: rotate(-18deg);
+    -ms-transform: rotate(-18deg);
+    transform: rotate(-18deg);
+  }
+
+  14% {
+    -webkit-transform: rotate(18deg);
+    -ms-transform: rotate(18deg);
+    transform: rotate(18deg);
+  }
+
+  16% {
+    -webkit-transform: rotate(-12deg);
+    -ms-transform: rotate(-12deg);
+    transform: rotate(-12deg);
+  }
+
+  18% {
+    -webkit-transform: rotate(12deg);
+    -ms-transform: rotate(12deg);
+    transform: rotate(12deg);
+  }
+
+  20% {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+
+.faa-ring.animated,
+.faa-ring.animated-hover:hover,
+.faa-parent.animated-hover:hover > .faa-ring {
+  -webkit-animation: ring 2s ease infinite;
+  animation: ring 2s ease infinite;
+  transform-origin-x: 50%;
+  transform-origin-y: 0px;
+  transform-origin-z: initial;
+}
+
+.faa-ring.animated.faa-fast,
+.faa-ring.animated-hover.faa-fast:hover,
+.faa-parent.animated-hover:hover > .faa-ring.faa-fast {
+  -webkit-animation: ring 1s ease infinite;
+  animation: ring 1s ease infinite;
+}
+
+.faa-ring.animated.faa-slow,
+.faa-ring.animated-hover.faa-slow:hover,
+.faa-parent.animated-hover:hover > .faa-ring.faa-slow {
+  -webkit-animation: ring 3s ease infinite;
+  animation: ring 3s ease infinite;
+}
+
+/* VERTICAL */
+
+@-webkit-keyframes vertical {
+  0% {
+    -webkit-transform: translate(0,-3px);
+    transform: translate(0,-3px);
+  }
+
+  4% {
+    -webkit-transform: translate(0,3px);
+    transform: translate(0,3px);
+  }
+
+  8% {
+    -webkit-transform: translate(0,-3px);
+    transform: translate(0,-3px);
+  }
+
+  12% {
+    -webkit-transform: translate(0,3px);
+    transform: translate(0,3px);
+  }
+
+  16% {
+    -webkit-transform: translate(0,-3px);
+    transform: translate(0,-3px);
+  }
+
+  20% {
+    -webkit-transform: translate(0,3px);
+    transform: translate(0,3px);
+  }
+
+  22% {
+    -webkit-transform: translate(0,0);
+    transform: translate(0,0);
+  }
+}
+
+@keyframes vertical {
+  0% {
+    -webkit-transform: translate(0,-3px);
+    -ms-transform: translate(0,-3px);
+    transform: translate(0,-3px);
+  }
+
+  4% {
+    -webkit-transform: translate(0,3px);
+    -ms-transform: translate(0,3px);
+    transform: translate(0,3px);
+  }
+
+  8% {
+    -webkit-transform: translate(0,-3px);
+    -ms-transform: translate(0,-3px);
+    transform: translate(0,-3px);
+  }
+
+  12% {
+    -webkit-transform: translate(0,3px);
+    -ms-transform: translate(0,3px);
+    transform: translate(0,3px);
+  }
+
+  16% {
+    -webkit-transform: translate(0,-3px);
+    -ms-transform: translate(0,-3px);
+    transform: translate(0,-3px);
+  }
+
+  20% {
+    -webkit-transform: translate(0,3px);
+    -ms-transform: translate(0,3px);
+    transform: translate(0,3px);
+  }
+
+  22% {
+    -webkit-transform: translate(0,0);
+    -ms-transform: translate(0,0);
+    transform: translate(0,0);
+  }
+}
+
+.faa-vertical.animated,
+.faa-vertical.animated-hover:hover,
+.faa-parent.animated-hover:hover > .faa-vertical {
+  -webkit-animation: vertical 2s ease infinite;
+  animation: vertical 2s ease infinite;
+}
+
+.faa-vertical.animated.faa-fast,
+.faa-vertical.animated-hover.faa-fast:hover,
+.faa-parent.animated-hover:hover > .faa-vertical.faa-fast {
+  -webkit-animation: vertical 1s ease infinite;
+  animation: vertical 1s ease infinite;
+}
+
+.faa-vertical.animated.faa-slow,
+.faa-vertical.animated-hover.faa-slow:hover,
+.faa-parent.animated-hover:hover > .faa-vertical.faa-slow {
+  -webkit-animation: vertical 4s ease infinite;
+  animation: vertical 4s ease infinite;
+}
+
+/* HORIZONTAL */
+
+@-webkit-keyframes horizontal {
+  0% {
+    -webkit-transform: translate(0,0);
+    transform: translate(0,0);
+  }
+
+  6% {
+    -webkit-transform: translate(5px,0);
+    transform: translate(5px,0);
+  }
+
+  12% {
+    -webkit-transform: translate(0,0);
+    transform: translate(0,0);
+  }
+
+  18% {
+    -webkit-transform: translate(5px,0);
+    transform: translate(5px,0);
+  }
+
+  24% {
+    -webkit-transform: translate(0,0);
+    transform: translate(0,0);
+  }
+
+  30% {
+    -webkit-transform: translate(5px,0);
+    transform: translate(5px,0);
+  }
+
+  36% {
+    -webkit-transform: translate(0,0);
+    transform: translate(0,0);
+  }
+}
+
+@keyframes horizontal {
+  0% {
+    -webkit-transform: translate(0,0);
+    -ms-transform: translate(0,0);
+    transform: translate(0,0);
+  }
+
+  6% {
+    -webkit-transform: translate(5px,0);
+    -ms-transform: translate(5px,0);
+    transform: translate(5px,0);
+  }
+
+  12% {
+    -webkit-transform: translate(0,0);
+    -ms-transform: translate(0,0);
+    transform: translate(0,0);
+  }
+
+  18% {
+    -webkit-transform: translate(5px,0);
+    -ms-transform: translate(5px,0);
+    transform: translate(5px,0);
+  }
+
+  24% {
+    -webkit-transform: translate(0,0);
+    -ms-transform: translate(0,0);
+    transform: translate(0,0);
+  }
+
+  30% {
+    -webkit-transform: translate(5px,0);
+    -ms-transform: translate(5px,0);
+    transform: translate(5px,0);
+  }
+
+  36% {
+    -webkit-transform: translate(0,0);
+    -ms-transform: translate(0,0);
+    transform: translate(0,0);
+  }
+}
+
+.faa-horizontal.animated,
+.faa-horizontal.animated-hover:hover,
+.faa-parent.animated-hover:hover > .faa-horizontal {
+  -webkit-animation: horizontal 2s ease infinite;
+  animation: horizontal 2s ease infinite;
+}
+
+.faa-horizontal.animated.faa-fast,
+.faa-horizontal.animated-hover.faa-fast:hover,
+.faa-parent.animated-hover:hover > .faa-horizontal.faa-fast {
+  -webkit-animation: horizontal 1s ease infinite;
+  animation: horizontal 1s ease infinite;
+}
+
+.faa-horizontal.animated.faa-slow,
+.faa-horizontal.animated-hover.faa-slow:hover,
+.faa-parent.animated-hover:hover > .faa-horizontal.faa-slow {
+  -webkit-animation: horizontal 3s ease infinite;
+  animation: horizontal 3s ease infinite;
+}
+
+/* FLASHING */
+
+@-webkit-keyframes flash {
+  0%, 100%, 50% {
+    opacity: 1;
+  }
+
+  25%, 75% {
+    opacity: 0;
+  }
+}
+
+@keyframes flash {
+  0%, 100%, 50% {
+    opacity: 1;
+  }
+
+  25%, 75% {
+    opacity: 0;
+  }
+}
+
+.faa-flash.animated,
+.faa-flash.animated-hover:hover,
+.faa-parent.animated-hover:hover > .faa-flash {
+  -webkit-animation: flash 2s ease infinite;
+  animation: flash 2s ease infinite;
+}
+
+.faa-flash.animated.faa-fast,
+.faa-flash.animated-hover.faa-fast:hover,
+.faa-parent.animated-hover:hover > .faa-flash.faa-fast {
+  -webkit-animation: flash 1s ease infinite;
+  animation: flash 1s ease infinite;
+}
+
+.faa-flash.animated.faa-slow,
+.faa-flash.animated-hover.faa-slow:hover,
+.faa-parent.animated-hover:hover > .faa-flash.faa-slow {
+  -webkit-animation: flash 3s ease infinite;
+  animation: flash 3s ease infinite;
+}
+
+/* BOUNCE */
+
+@-webkit-keyframes bounce {
+  0%, 10%, 20%, 50%, 80% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  40% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+
+  60% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+
+@keyframes bounce {
+  0%, 10%, 20%, 50%, 80% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  40% {
+    -webkit-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+
+  60% {
+    -webkit-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+
+.faa-bounce.animated,
+.faa-bounce.animated-hover:hover,
+.faa-parent.animated-hover:hover > .faa-bounce {
+  -webkit-animation: bounce 2s ease infinite;
+  animation: bounce 2s ease infinite;
+}
+
+.faa-bounce.animated.faa-fast,
+.faa-bounce.animated-hover.faa-fast:hover,
+.faa-parent.animated-hover:hover > .faa-bounce.faa-fast {
+  -webkit-animation: bounce 1s ease infinite;
+  animation: bounce 1s ease infinite;
+}
+
+.faa-bounce.animated.faa-slow,
+.faa-bounce.animated-hover.faa-slow:hover,
+.faa-parent.animated-hover:hover > .faa-bounce.faa-slow {
+  -webkit-animation: bounce 3s ease infinite;
+  animation: bounce 3s ease infinite;
+}
+
+/* SPIN */
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(359deg);
+    -ms-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+
+.faa-spin.animated,
+.faa-spin.animated-hover:hover,
+.faa-parent.animated-hover:hover > .faa-spin {
+  -webkit-animation: spin 1.5s linear infinite;
+  animation: spin 1.5s linear infinite;
+}
+
+.faa-spin.animated.faa-fast,
+.faa-spin.animated-hover.faa-fast:hover,
+.faa-parent.animated-hover:hover > .faa-spin.faa-fast {
+  -webkit-animation: spin 0.7s linear infinite;
+  animation: spin 0.7s linear infinite;
+}
+
+.faa-spin.animated.faa-slow,
+.faa-spin.animated-hover.faa-slow:hover,
+.faa-parent.animated-hover:hover > .faa-spin.faa-slow {
+  -webkit-animation: spin 2.2s linear infinite;
+  animation: spin 2.2s linear infinite;
+}
+
+/* FLOAT */
+
+@-webkit-keyframes float {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  50% {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  50% {
+    -webkit-transform: translateY(-6px);
+    -ms-transform: translateY(-6px);
+    transform: translateY(-6px);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+.faa-float.animated,
+.faa-float.animated-hover:hover,
+.faa-parent.animated-hover:hover > .faa-float {
+  -webkit-animation: float 2s linear infinite;
+  animation: float 2s linear infinite;
+}
+
+.faa-float.animated.faa-fast,
+.faa-float.animated-hover.faa-fast:hover,
+.faa-parent.animated-hover:hover > .faa-float.faa-fast {
+  -webkit-animation: float 1s linear infinite;
+  animation: float 1s linear infinite;
+}
+
+.faa-float.animated.faa-slow,
+.faa-float.animated-hover.faa-slow:hover,
+.faa-parent.animated-hover:hover > .faa-float.faa-slow {
+  -webkit-animation: float 3s linear infinite;
+  animation: float 3s linear infinite;
+}
+
+/* PULSE */
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+
+  50% {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+
+  100% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+
+  50% {
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+
+  100% {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}
+
+.faa-pulse.animated,
+.faa-pulse.animated-hover:hover,
+.faa-parent.animated-hover:hover > .faa-pulse {
+  -webkit-animation: pulse 2s linear infinite;
+  animation: pulse 2s linear infinite;
+}
+
+.faa-pulse.animated.faa-fast,
+.faa-pulse.animated-hover.faa-fast:hover,
+.faa-parent.animated-hover:hover > .faa-pulse.faa-fast {
+  -webkit-animation: pulse 1s linear infinite;
+  animation: pulse 1s linear infinite;
+}
+
+.faa-pulse.animated.faa-slow,
+.faa-pulse.animated-hover.faa-slow:hover,
+.faa-parent.animated-hover:hover > .faa-pulse.faa-slow {
+  -webkit-animation: pulse 3s linear infinite;
+  animation: pulse 3s linear infinite;
+}
+
+/* SHAKE */
+
+.faa-shake.animated,
+.faa-shake.animated-hover:hover,
+.faa-parent.animated-hover:hover > .faa-shake {
+  -webkit-animation: wrench 2.5s ease infinite;
+  animation: wrench 2.5s ease infinite;
+}
+
+.faa-shake.animated.faa-fast,
+.faa-shake.animated-hover.faa-fast:hover,
+.faa-parent.animated-hover:hover > .faa-shake.faa-fast {
+  -webkit-animation: wrench 1.2s ease infinite;
+  animation: wrench 1.2s ease infinite;
+}
+
+.faa-shake.animated.faa-slow,
+.faa-shake.animated-hover.faa-slow:hover,
+.faa-parent.animated-hover:hover > .faa-shake.faa-slow {
+  -webkit-animation: wrench 3.7s ease infinite;
+  animation: wrench 3.7s ease infinite;
+}
+
+/* TADA */
+
+@-webkit-keyframes tada {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  10%, 20% {
+    -webkit-transform: scale(.9) rotate(-8deg);
+    transform: scale(.9) rotate(-8deg);
+  }
+
+  30%, 50%, 70% {
+    -webkit-transform: scale(1.3) rotate(8deg);
+    transform: scale(1.3) rotate(8deg);
+  }
+
+  40%, 60% {
+    -webkit-transform: scale(1.3) rotate(-8deg);
+    transform: scale(1.3) rotate(-8deg);
+  }
+
+  80% {
+    -webkit-transform: scale(1) rotate(0);
+    transform: scale(1) rotate(0);
+  }
+}
+
+@keyframes tada {
+  0% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+
+  10%, 20% {
+    -webkit-transform: scale(.9) rotate(-8deg);
+    -ms-transform: scale(.9) rotate(-8deg);
+    transform: scale(.9) rotate(-8deg);
+  }
+
+  30%, 50%, 70% {
+    -webkit-transform: scale(1.3) rotate(8deg);
+    -ms-transform: scale(1.3) rotate(8deg);
+    transform: scale(1.3) rotate(8deg);
+  }
+
+  40%, 60% {
+    -webkit-transform: scale(1.3) rotate(-8deg);
+    -ms-transform: scale(1.3) rotate(-8deg);
+    transform: scale(1.3) rotate(-8deg);
+  }
+
+  80% {
+    -webkit-transform: scale(1) rotate(0);
+    -ms-transform: scale(1) rotate(0);
+    transform: scale(1) rotate(0);
+  }
+}
+
+.faa-tada.animated,
+.faa-tada.animated-hover:hover,
+.faa-parent.animated-hover:hover > .faa-tada {
+  -webkit-animation: tada 2s linear infinite;
+  animation: tada 2s linear infinite;
+}
+
+.faa-tada.animated.faa-fast,
+.faa-tada.animated-hover.faa-fast:hover,
+.faa-parent.animated-hover:hover > .faa-tada.faa-fast {
+  -webkit-animation: tada 1s linear infinite;
+  animation: tada 1s linear infinite;
+}
+
+.faa-tada.animated.faa-slow,
+.faa-tada.animated-hover.faa-slow:hover,
+.faa-parent.animated-hover:hover > .faa-tada.faa-slow {
+  -webkit-animation: tada 3s linear infinite;
+  animation: tada 3s linear infinite;
+}
+
+/* PASSING */
+
+@-webkit-keyframes passing {
+  0% {
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    opacity: 0;
+  }
+
+  50% {
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+    opacity: 1;
+  }
+
+  100% {
+    -webkit-transform: translateX(50%);
+    transform: translateX(50%);
+    opacity: 0;
+  }
+}
+
+@keyframes passing {
+  0% {
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    opacity: 0;
+  }
+
+  50% {
+    -webkit-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    transform: translateX(0%);
+    opacity: 1;
+  }
+
+  100% {
+    -webkit-transform: translateX(50%);
+    -ms-transform: translateX(50%);
+    transform: translateX(50%);
+    opacity: 0;
+  }
+}
+
+.faa-passing.animated,
+.faa-passing.animated-hover:hover,
+.faa-parent.animated-hover:hover > .faa-passing {
+  -webkit-animation: passing 2s linear infinite;
+  animation: passing 2s linear infinite;
+}
+
+.faa-passing.animated.faa-fast,
+.faa-passing.animated-hover.faa-fast:hover,
+.faa-parent.animated-hover:hover > .faa-passing.faa-fast {
+  -webkit-animation: passing 1s linear infinite;
+  animation: passing 1s linear infinite;
+}
+
+.faa-passing.animated.faa-slow,
+.faa-passing.animated-hover.faa-slow:hover,
+.faa-parent.animated-hover:hover > .faa-passing.faa-slow {
+  -webkit-animation: passing 3s linear infinite;
+  animation: passing 3s linear infinite;
+}
+
+/* WAVE */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@-webkit-keyframes burst {
+  0% {
+    opacity: .6;
+	
+  }
+
+  50% {
+    -webkit-transform: scale(1.7);
+    transform: scale(1.7);
+    opacity: 0;
+	
+  }
+ 
+  100% {
+    opacity: 0;
+	
+  }
+}
+
+@keyframes burst {
+  0% {
+    opacity: .6;
+  }
+
+  50% {
+    -webkit-transform: scale(1.7);
+    -ms-transform: scale(1.7);
+    transform: scale(1.7);
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.faa-burst.animated,
+.faa-burst.animated-hover:hover,
+.faa-parent.animated-hover:hover > .faa-burst {
+  -webkit-animation: burst 2s infinite linear;
+  animation: burst 2s infinite linear;
+	
+}
+
+.faa-burst.animated.faa-fast,
+.faa-burst.animated-hover.faa-fast:hover,
+.faa-parent.animated-hover:hover > .faa-burst.faa-fast {
+  -webkit-animation: burst 1s infinite linear;
+  animation: burst 1s infinite linear;
+}
+
+.faa-burst.animated.faa-slow,
+.faa-burst.animated-hover.faa-slow:hover,
+.faa-parent.animated-hover:hover > .faa-burst.faa-slow {
+  -webkit-animation: burst 4.5s infinite linear;
+  animation: burst 4.5s infinite linear;
+	
+}
+
+.faa-burst.animated.faa-slow {
+
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNvdXJjZS5jc3MiLCJ0by5jc3MiLCJnZW5lcmF0ZWQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBOzs7O0lDSUc7QUNDSDtFQUNFO0lBQ0UsbUNBQUE7SUZKSCwyQkFBQTtJQ01FOztFQ0VEO0lBQ0Usa0NBQUE7SUZSSCwwQkFBQTtJQ1VFOztFQ0VEO0lBQ0Usa0NBQUE7SUZaSCwwQkFBQTtJQ2NFOztFQ0VEO0lBQ0UsbUNBQUE7SUZoQkgsMkJBQUE7SUNrQkU7O0VDRUQ7SUFDRSxtQ0FBQTtJRnBCSCwyQkFBQTtJQ3NCRTs7RUNFRDtJQUNFLGtDQUFBO0lGeEJILDBCQUFBO0lDMEJFOztFQ0VEO0lBQ0Usa0NBQUE7SUY1QkgsMEJBQUE7SUM4QkU7O0VDRUQ7SUFDRSxtQ0FBQTtJRmhDSCwyQkFBQTtJQ2tDRTs7RUNFRDtJQUNFLG1DQUFBO0lGcENILDJCQUFBO0lDc0NFOztFQ0VEO0lBQ0Usa0NBQUE7SUZ4Q0gsMEJBQUE7SUMwQ0U7O0VDRUQ7SUFDRSxrQ0FBQTtJRjVDSCwwQkFBQTtJQzhDRTs7RUNFRDtJQUNFLG1DQUFBO0lGaERILDJCQUFBO0lDa0RFOztFQ0VEO0lBQ0UsbUNBQUE7SUZwREgsMkJBQUE7SUNzREU7O0VDRUQ7SUFDRSxrQ0FBQTtJRnhESCwwQkFBQTtJQzBERTs7RUNFRDtJQUNFLGlDQUFBO0lBQ0EseUJBQUE7SURDRDtFQUNGOztBQ0VEO0VBQ0U7SUFDRSxtQ0FBQTtJQUNBLCtCQUFBO0lGbEZILDJCQUFBO0lDb0ZFOztFQ0VEO0lBQ0Usa0NBQUE7SUFDQSw4QkFBQTtJRnZGSCwwQkFBQTtJQ3lGRTs7RUNFRDtJQUNFLGtDQUFBO0lBQ0EsOEJBQUE7SUY1RkgsMEJBQUE7SUM4RkU7O0VDRUQ7SUFDRSxtQ0FBQTtJQUNBLCtCQUFBO0lGakdILDJCQUFBO0lDbUdFOztFQ0VEO0lBQ0UsbUNBQUE7SUFDQSwrQkFBQTtJRnRHSCwyQkFBQTtJQ3dHRTs7RUNFRDtJQUNFLGtDQUFBO0lBQ0EsOEJBQUE7SUYzR0gsMEJBQUE7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 */

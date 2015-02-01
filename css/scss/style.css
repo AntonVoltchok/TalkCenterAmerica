@@ -1,0 +1,2895 @@
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,700,300);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300);
+@import url(http://fonts.googleapis.com/css?family=Anton);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700);
+/* line 6, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/helper-classes-reset */
+html, button, input, select, textarea {
+  color: #222; }
+
+/* line 11, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/helper-classes-reset */
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none; }
+
+/* line 16, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/helper-classes-reset */
+::selection {
+  background: #b3d4fc;
+  text-shadow: none; }
+
+/* line 21, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/helper-classes-reset */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0; }
+
+/* line 33, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/helper-classes-reset */
+audio, canvas, img, video {
+  vertical-align: middle; }
+
+/* line 37, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/helper-classes-reset */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0; }
+
+/* line 43, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/helper-classes-reset */
+textarea {
+  resize: vertical; }
+
+/* line 47, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/helper-classes-reset */
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.92em 0; }
+
+/* ===============
+    ALL: IE Fixes
+   =============== */
+/* line 60, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/helper-classes-reset */
+.ie7 .title {
+  padding-top: 20px; }
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+/* line 68, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/helper-classes-reset */
+.ir {
+  background-color: transparent;
+  border: 0;
+  overflow: hidden;
+  *text-indent: -9999px; }
+
+/* line 75, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/helper-classes-reset */
+.ir:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 150%; }
+
+/* line 82, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/helper-classes-reset */
+.hidden {
+  display: none !important;
+  visibility: hidden; }
+
+/* line 87, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/helper-classes-reset */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
+/* line 99, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/helper-classes-reset */
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto; }
+
+/* line 108, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/helper-classes-reset */
+.invisible {
+  visibility: hidden; }
+
+/* line 113, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/helper-classes-reset */
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table; }
+
+/* line 118, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/helper-classes-reset */
+.clearfix:after {
+  clear: both; }
+
+/* line 122, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/helper-classes-reset */
+.clearfix {
+  *zoom: 1; }
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+@media print {
+  /* line 131, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/helper-classes-reset */
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important; }
+
+  /* line 139, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/helper-classes-reset */
+  a, a:visited {
+    text-decoration: underline; }
+
+  /* line 143, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/helper-classes-reset */
+  a[href]:after {
+    content: " (" attr(href) ")"; }
+
+  /* line 147, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/helper-classes-reset */
+  abbr[title]:after {
+    content: " (" attr(title) ")"; }
+
+  /* line 153, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/helper-classes-reset */
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after {
+    content: ""; }
+
+  /* line 158, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/helper-classes-reset */
+  pre, blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid; }
+
+  /* line 163, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/helper-classes-reset */
+  thead {
+    display: table-header-group; }
+
+  /* line 168, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/helper-classes-reset */
+  tr, img {
+    page-break-inside: avoid; }
+
+  /* line 172, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/helper-classes-reset */
+  img {
+    max-width: 100% !important; }
+
+  @page {
+    margin: 0.5cm; }
+
+  /* line 182, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/helper-classes-reset */
+  p, h2, h3 {
+    orphans: 3;
+    widows: 3; }
+
+  /* line 188, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/helper-classes-reset */
+  h2, h3 {
+    page-break-after: avoid; }
+ }
+
+/*********************************************
+	BASE FONT SIZING
+*********************************************/
+/*********************************************
+	MIXINS
+*********************************************/
+/*********************************************
+	- 1.0 -  COLOURS
+*********************************************/
+/* Find colour names - http://chir.ag/projects/name-that-color/ */
+/*********************************************
+	- 2.0 -  OTHER
+*********************************************/
+/*********************************************
+	- 3.0 -  TYPOGRAPHY
+*********************************************/
+/* - 3.1. - FONT WEIGHTS
+	------------------------------------------ */
+/* - 3.1. - BASE FONTS
+	------------------------------------------ */
+/* RANDOM FUNCTIONS / MIXINS */
+/* line 8, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/modules/typography */
+h1, h2, h3, h4, h5, h6, ul, ol, dl, fieldset, p, table, pre, hr {
+  font-weight: normal;
+  margin-bottom: 24px;
+  margin-bottom: 1.5rem; }
+
+/* line 14, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/modules/typography */
+h1 {
+  font-family: 'Oswald', sans-serif;
+  color: #484747;
+  font-weight: 400;
+  line-height: 1.72em; }
+  @media only screen and (min-width: 1921px) and (max-width: 2565px) {
+    h1 {
+      font-size: 70px;
+      font-size: 4.375rem; } }
+  @media only screen and (min-width: 1601px) and (max-width: 1920px) {
+    h1 {
+      font-size: 64px;
+      font-size: 4rem; } }
+  @media only screen and (min-width: 1281px) and (max-width: 1600px) {
+    h1 {
+      font-size: 54px;
+      font-size: 3.375rem; } }
+  @media only screen and (min-width: 1006px) and (max-width: 1280px) {
+    h1 {
+      font-size: 44px;
+      font-size: 2.75rem; } }
+  @media only screen and (min-width: 756px) and (max-width: 1005px) {
+    h1 {
+      font-size: 34px;
+      font-size: 2.125rem; } }
+  @media only screen and (min-width: 376px) and (max-width: 755px) {
+    h1 {
+      font-size: 30px;
+      font-size: 1.875rem; } }
+  @media only screen and (min-width: 321px) and (max-width: 375px) {
+    h1 {
+      font-size: 26px;
+      font-size: 1.625rem; } }
+  @media only screen and (max-width: 320px) {
+    h1 {
+      font-size: 20px;
+      font-size: 1.25rem; } }
+
+/* line 29, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/modules/typography */
+.h1-subhead {
+  font-family: 'Oswald', sans-serif;
+  color: #484747;
+  font-weight: 400;
+  line-height: 1.2 em; }
+  @media only screen and (min-width: 1921px) and (max-width: 2565px) {
+    .h1-subhead {
+      font-size: 36px;
+      font-size: 2.25rem; } }
+  @media only screen and (min-width: 1601px) and (max-width: 1920px) {
+    .h1-subhead {
+      font-size: 32px;
+      font-size: 2rem; } }
+  @media only screen and (min-width: 1281px) and (max-width: 1600px) {
+    .h1-subhead {
+      font-size: 28px;
+      font-size: 1.75rem; } }
+  @media only screen and (min-width: 1006px) and (max-width: 1280px) {
+    .h1-subhead {
+      font-size: 24px;
+      font-size: 1.5rem; } }
+  @media only screen and (min-width: 756px) and (max-width: 1005px) {
+    .h1-subhead {
+      font-size: 22px;
+      font-size: 1.375rem; } }
+  @media only screen and (min-width: 376px) and (max-width: 755px) {
+    .h1-subhead {
+      font-size: 16px;
+      font-size: 1rem; } }
+  @media only screen and (min-width: 321px) and (max-width: 375px) {
+    .h1-subhead {
+      font-size: 15px;
+      font-size: 0.9375rem; } }
+  @media only screen and (max-width: 320px) {
+    .h1-subhead {
+      font-size: 14px;
+      font-size: 0.875rem; } }
+
+/* line 45, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/modules/typography */
+h2 {
+  line-height: 1.4;
+  color: #beddfc;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 400; }
+  @media only screen and (min-width: 1921px) and (max-width: 2565px) {
+    h2 {
+      font-size: 25px;
+      font-size: 1.5625rem; } }
+  @media only screen and (min-width: 1601px) and (max-width: 1920px) {
+    h2 {
+      font-size: 23px;
+      font-size: 1.4375rem; } }
+  @media only screen and (min-width: 1281px) and (max-width: 1600px) {
+    h2 {
+      font-size: 21px;
+      font-size: 1.3125rem; } }
+  @media only screen and (min-width: 1006px) and (max-width: 1280px) {
+    h2 {
+      font-size: 19px;
+      font-size: 1.1875rem; } }
+  @media only screen and (min-width: 756px) and (max-width: 1005px) {
+    h2 {
+      font-size: 16px;
+      font-size: 1rem; } }
+  @media only screen and (min-width: 376px) and (max-width: 755px) {
+    h2 {
+      font-size: 13px;
+      font-size: 0.8125rem;
+      margin-left: 8%;
+      margin-right: 8%; } }
+  @media only screen and (min-width: 321px) and (max-width: 375px) {
+    h2 {
+      font-size: 13px;
+      font-size: 0.8125rem; } }
+  @media only screen and (max-width: 320px) {
+    h2 {
+      font-size: 12px;
+      font-size: 0.75rem; } }
+
+/* line 60, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/modules/typography */
+h3 {
+  font-family: 'Roboto Slab', serif;
+  color: #484747;
+  font-weight: 400;
+  line-height: 1.5 em; }
+  @media only screen and (min-width: 1921px) and (max-width: 2565px) {
+    h3 {
+      font-size: 36px;
+      font-size: 2.25rem; } }
+  @media only screen and (min-width: 1601px) and (max-width: 1920px) {
+    h3 {
+      font-size: 32px;
+      font-size: 2rem; } }
+  @media only screen and (min-width: 1281px) and (max-width: 1600px) {
+    h3 {
+      font-size: 28px;
+      font-size: 1.75rem; } }
+  @media only screen and (min-width: 1006px) and (max-width: 1280px) {
+    h3 {
+      font-size: 24px;
+      font-size: 1.5rem; } }
+  @media only screen and (min-width: 756px) and (max-width: 1005px) {
+    h3 {
+      font-size: 22px;
+      font-size: 1.375rem; } }
+  @media only screen and (min-width: 376px) and (max-width: 755px) {
+    h3 {
+      font-size: 18px;
+      font-size: 1.125rem; } }
+  @media only screen and (min-width: 321px) and (max-width: 375px) {
+    h3 {
+      font-size: 14px;
+      font-size: 0.875rem; } }
+  @media only screen and (max-width: 320px) {
+    h3 {
+      font-size: 10px;
+      font-size: 0.625rem; } }
+
+/* line 1, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/menu */
+.header-stripe {
+  width: 100%;
+  height: 45px;
+  background-color: rgba(237, 237, 237, 0.96);
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  clear: both; }
+
+/* line 11, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/menu */
+.header-logo {
+  float: right;
+  height: 45px;
+  margin-right: 5%; }
+  /* line 16, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/menu */
+  .header-logo img {
+    float: right;
+    height: auto;
+    max-width: 100%;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%); }
+    @media only screen and (min-width: 1281px) and (max-width: 1600px) {
+      .header-logo img {
+        max-width: 90%; } }
+    @media only screen and (min-width: 1006px) and (max-width: 1280px) {
+      .header-logo img {
+        max-width: 80%; } }
+    @media only screen and (min-width: 756px) and (max-width: 1005px) {
+      .header-logo img {
+        max-width: 80%; } }
+    @media only screen and (min-width: 376px) and (max-width: 755px) {
+      .header-logo img {
+        max-width: 70%; } }
+    @media only screen and (min-width: 321px) and (max-width: 375px) {
+      .header-logo img {
+        max-width: 65%; } }
+    @media only screen and (max-width: 320px) {
+      .header-logo img {
+        max-width: 60%; } }
+
+/* line 42, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/menu */
+.ul-nav {
+  font-family: 'Anton', sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  font-size: 1.375rem;
+  text-align: center;
+  list-style-type: none;
+  max-width: 60%;
+  height: 45px;
+  margin: 0 0 0 4%;
+  padding: 0; }
+  @media only screen and (min-width: 1281px) and (max-width: 1600px) {
+    .ul-nav {
+      max-width: 60%;
+      font-size: 20px;
+      font-size: 1.25rem; } }
+  @media only screen and (min-width: 1006px) and (max-width: 1280px) {
+    .ul-nav {
+      max-width: 65%;
+      font-size: 17px;
+      font-size: 1.0625rem; } }
+
+/* line 62, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/menu */
+.menu-li {
+  width: 11%;
+  float: left;
+  list-style-type: none;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%); }
+
+/* line 68, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/menu */
+.menu-li:last-child {
+  border-right: none; }
+
+/* line 71, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/menu */
+.menu-li a {
+  text-decoration: none;
+  display: block;
+  width: 100%; }
+
+/* line 83, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/menu */
+a {
+  text-decoration: none;
+  color: #1f4c73; }
+
+/* line 84, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/menu */
+a:visited {
+  text-decoration: none; }
+
+/* line 85, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/menu */
+a:focus {
+  text-decoration: none; }
+
+/* line 86, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/menu */
+a:hover, a:active {
+  text-decoration: none; }
+
+/* line 87, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/menu */
+a:hover {
+  text-decoration: none;
+  background-color: white;
+  border-radius: 2px; }
+
+@media screen and (max-width: 1005px) {
+  /* line 95, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/menu */
+  #menu {
+    position: absolute;
+    top: 21%;
+    left: 5%;
+    width: 1em;
+    display: block;
+    color: #33558b;
+    font-size: 1.75em;
+    text-align: center; }
+    @media only screen and (min-width: 321px) and (max-width: 375px) {
+      #menu {
+        max-width: 65%; } }
+    @media only screen and (max-width: 320px) {
+      #menu {
+        max-width: 60%; } }
+
+  /* line 112, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/menu */
+  .fa-chevron {
+    display: none; }
+
+  /* line 115, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/menu */
+  #nav.js {
+    display: none; }
+
+  /* line 118, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/menu */
+  .ul-nav {
+    max-width: 100%;
+    margin: 0; }
+
+  /* line 122, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/menu */
+  .menu-li {
+    width: 100%;
+    border-right: none;
+    background-color: #e2e2e2; }
+
+  /* line 127, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/menu */
+  .menu-li a {
+    padding: 1%;
+    width: 100%; }
+
+  /* line 132, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/menu */
+  a:hover {
+    background-color: #fff; }
+ }
+
+@media screen and (min-width: 1005px) {
+  /* line 139, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/menu */
+  #menu {
+    display: none; }
+
+  /* line 142, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/menu */
+  #menu-icon2 {
+    display: none; }
+ }
+
+/* line 4, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/intro */
+.intro-wrapper {
+  background-color: #fff;
+  margin: 3% 5% 0; }
+  /* line 69, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/modules/utility */
+  .intro-wrapper:before, .intro-wrapper:after {
+    content: "";
+    display: table; }
+  /* line 73, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/modules/utility */
+  .intro-wrapper:after {
+    clear: both; }
+  @media only screen and (max-width: 768px) {
+    .intro-wrapper {
+      margin-top: 1%; } }
+
+/* line 16, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/intro */
+.intro-hero {
+  width: 100%;
+  margin-bottom: 3.3%; }
+  @media only screen and (min-width: 756px) and (max-width: 1005px) {
+    .intro-hero {
+      margin-top: 6%; } }
+  @media only screen and (max-width: 768px) {
+    .intro-hero {
+      margin-top: 12%; } }
+  @media only screen and (min-width: 376px) and (max-width: 755px) {
+    .intro-hero {
+      margin-top: 15%; } }
+  @media only screen and (max-width: 320px) {
+    .intro-hero {
+      margin-top: 25%; } }
+  @media only screen and (min-width: 321px) and (max-width: 375px) {
+    .intro-hero {
+      margin-top: 22%; } }
+
+/* line 28, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/intro */
+.intro-hero-text {
+  text-align: center; }
+
+/* line 35, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/intro */
+.intro-split-content {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0 2%; }
+  /* line 69, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/modules/utility */
+  .intro-split-content:before, .intro-split-content:after {
+    content: "";
+    display: table; }
+  /* line 73, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/modules/utility */
+  .intro-split-content:after {
+    clear: both; }
+
+/* line 44, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/intro */
+.skype-box {
+  float: left;
+  margin-top: 4%; }
+  @media only screen and (max-width: 768px) {
+    .skype-box {
+      width: 100%;
+      margin: 0 0 5%;
+      float: none; } }
+
+/* line 55, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/intro */
+.skype-box-head {
+  box-sizing: border-box;
+  margin: 0 0 8%;
+  font-family: 'Roboto Condensed', sans-serif;
+  color: #484747;
+  font-weight: 400;
+  line-height: 1.2em;
+  font-size: 42px;
+  font-size: 2.625rem; }
+  @media only screen and (min-width: 1281px) and (max-width: 1600px) {
+    .skype-box-head {
+      font-size: 35px;
+      font-size: 2.1875rem; } }
+  @media only screen and (min-width: 1006px) and (max-width: 1280px) {
+    .skype-box-head {
+      font-size: 26px;
+      font-size: 1.625rem; } }
+  @media only screen and (min-width: 756px) and (max-width: 1005px) {
+    .skype-box-head {
+      font-size: 22px;
+      font-size: 1.375rem; } }
+  @media only screen and (min-width: 376px) and (max-width: 755px) {
+    .skype-box-head {
+      font-size: 21px;
+      font-size: 1.3125rem; } }
+  @media only screen and (min-width: 321px) and (max-width: 375px) {
+    .skype-box-head {
+      font-size: 20px;
+      font-size: 1.25rem; } }
+  @media only screen and (max-width: 320px) {
+    .skype-box-head {
+      font-size: 19px;
+      font-size: 1.1875rem; } }
+  @media only screen and (max-width: 768px) {
+    .skype-box-head {
+      float: none;
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0 1%;
+      text-align: center;
+      transition: all 1s; } }
+
+/* line 69, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/modules/utility */
+.skype-box-split:before, .skype-box-split:after {
+  content: "";
+  display: table; }
+/* line 73, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/modules/utility */
+.skype-box-split:after {
+  clear: both; }
+
+/* line 85, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/intro */
+.skype-box-subhead {
+  box-sizing: border-box;
+  margin-top: 7%;
+  float: left;
+  font-family: 'Roboto Condensed', sans-serif;
+  color: #484747;
+  font-weight: 400;
+  line-height: 1.2em;
+  font-size: 31px;
+  font-size: 1.9375rem; }
+  @media only screen and (min-width: 1281px) and (max-width: 1600px) {
+    .skype-box-subhead {
+      font-size: 27px;
+      font-size: 1.6875rem; } }
+  @media only screen and (min-width: 1006px) and (max-width: 1280px) {
+    .skype-box-subhead {
+      font-size: 22px;
+      font-size: 1.375rem; } }
+  @media only screen and (min-width: 756px) and (max-width: 1005px) {
+    .skype-box-subhead {
+      font-size: 17px;
+      font-size: 1.0625rem; } }
+  @media only screen and (min-width: 376px) and (max-width: 755px) {
+    .skype-box-subhead {
+      font-size: 17px;
+      font-size: 1.0625rem; } }
+  @media only screen and (min-width: 321px) and (max-width: 375px) {
+    .skype-box-subhead {
+      font-size: 17px;
+      font-size: 1.0625rem; } }
+  @media only screen and (max-width: 320px) {
+    .skype-box-subhead {
+      font-size: 16px;
+      font-size: 1rem; } }
+  @media only screen and (max-width: 768px) {
+    .skype-box-subhead {
+      box-sizing: border-box;
+      width: 100%;
+      margin: 5% 0 0;
+      padding: 0 1%;
+      text-align: center;
+      transition: all 1s; } }
+
+/* line 112, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/intro */
+.skype-box-img {
+  float: left;
+  margin-left: 11%;
+  width: 22%;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out; }
+  @media only screen and (min-width: 1281px) and (max-width: 1600px) {
+    .skype-box-img {
+      width: 21%; } }
+  @media only screen and (min-width: 1006px) and (max-width: 1280px) {
+    .skype-box-img {
+      width: 20%; } }
+  @media only screen and (min-width: 756px) and (max-width: 1005px) {
+    .skype-box-img {
+      width: 16%;
+      margin-top: 2%; } }
+  @media only screen and (max-width: 768px) {
+    .skype-box-img {
+      display: none; } }
+
+/* line 128, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/intro */
+.skype-box-img:hover {
+  transform: scale(1.05); }
+
+/* line 132, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/intro */
+.skype {
+  width: 100%;
+  opacity: 1;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0px 20px 30px -24px rgba(50, 50, 50, 0.1); }
+
+/* line 141, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/intro */
+.skype:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 30px 30px -20px rgba(50, 50, 50, 0.37); }
+
+/* line 157, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/intro */
+.monitor-box {
+  float: right;
+  width: 58%; }
+  @media only screen and (min-width: 756px) and (max-width: 1005px) {
+    .monitor-box {
+      width: 52%; } }
+  @media only screen and (max-width: 768px) {
+    .monitor-box {
+      float: none;
+      box-sizing: border-box;
+      padding: 3% 10% 0 10%;
+      width: 100%;
+      transition: all 1s; } }
+
+/* line 173, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/intro */
+.center-play {
+  width: 100%;
+  position: relative; }
+
+/* line 177, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/intro */
+.monitor {
+  width: 100%; }
+
+/* line 181, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/intro */
+.play-button {
+  position: absolute;
+  top: 27%;
+  left: 39.35%;
+  width: 20%;
+  width: 20%;
+  box-sizing: border-box;
+  border-radius: 50%;
+  border: 4px solid white;
+  box-shadow: 0 0 13px 3px rgba(23, 23, 23, 0.29);
+  opacity: 0.9;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -webkit-animation-direction: normal;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-name: flip-point;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-direction: normal;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-name: flip-point; }
+
+@media screen and (min-width: 701px) {
+  @-webkit-keyframes 'flip-point' {
+    /* line 211, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/intro */
+    0%, 16% {
+      -ms-transform: rotate(90deg);
+      /* IE 9 */
+      -webkit-transform: rotate(90deg);
+      /* Chrome, Safari, Opera */
+      transform: rotate(90deg); }
+
+    /* line 216, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/intro */
+    25% {
+      -ms-transform: rotate(0deg);
+      /* IE 9 */
+      -webkit-transform: rotate(0deg);
+      /* Chrome, Safari, Opera */
+      transform: rotate(0deg); }
+
+    /* line 221, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/intro */
+    42% {
+      -webkit-transform: rotateX(0deg);
+      /* Chrome, Safari, Opera */
+      transform: rotateX(0deg); }
+
+    /* line 225, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/intro */
+    48% {
+      -webkit-transform: rotateX(-70deg);
+      /* Chrome, Safari, Opera */
+      transform: rotateX(-70deg); }
+
+    /* line 229, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/intro */
+    52% {
+      -webkit-transform: rotateY(90deg);
+      /* Chrome, Safari, Opera */
+      transform: rotateY(90deg); }
+
+    /* line 233, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/intro */
+    57% {
+      -webkit-transform: rotateX(0deg);
+      /* Chrome, Safari, Opera */
+      transform: rotateX(0deg); }
+
+    /* line 237, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/intro */
+    93% {
+      -ms-transform: rotate(0deg);
+      /* IE 9 */
+      -webkit-transform: rotate(0deg);
+      /* Chrome, Safari, Opera */
+      transform: rotate(0deg); }
+
+    /* line 242, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/intro */
+    99%, 100% {
+      -ms-transform: rotate(90deg);
+      /* IE 9 */
+      -webkit-transform: rotate(90deg);
+      /* Chrome, Safari, Opera */
+      transform: rotate(90deg); } }
+ }
+
+/* line 250, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/intro */
+.play-button:hover {
+  opacity: 0.95;
+  box-sizing: border-box;
+  border-radius: 100%;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.56);
+  border: 10px solid rgba(255, 255, 255, 0.31); }
+
+/* line 264, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/intro */
+.play-button-animate {
+  position: absolute;
+  top: 28.25%;
+  left: 40.4%;
+  width: 18%;
+  height: 23%;
+  background-color: white;
+  border-radius: 100%;
+  box-sizing: border-box;
+  box-shadow: 0 0 10px 10px white;
+  -webkit-animation: burst 5s infinite linear;
+  animation: burst 5s infinite linear; }
+
+@-webkit-keyframes burst {
+  /* line 279, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/intro */
+  0% {
+    opacity: 0.8; }
+
+  /* line 280, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/intro */
+  25% {
+    opacity: 0.2; }
+
+  /* line 281, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/intro */
+  35% {
+    opacity: 0; }
+
+  /* line 282, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/intro */
+  45% {
+    -webkit-transform: scale(1.7);
+    transform: scale(1.7);
+    opacity: 0; }
+
+  /* line 287, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/intro */
+  100% {
+    opacity: 0; } }
+
+@keyframes burst {
+  /* line 291, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/intro */
+  0% {
+    opacity: 0.8; }
+
+  /* line 292, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/intro */
+  35% {
+    opacity: 0; }
+
+  /* line 293, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/intro */
+  45% {
+    -webkit-transform: scale(1.7);
+    -ms-transform: scale(1.7);
+    transform: scale(1.7);
+    opacity: 0; }
+
+  /* line 299, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/intro */
+  100% {
+    opacity: 0; } }
+
+/* line 304, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/intro */
+img {
+  max-width: 100%; }
+
+/* line 309, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/intro */
+#open-popup {
+  padding: 0;
+  cursor: pointer; }
+
+@media screen and (max-width: 700px) {
+  @-webkit-keyframes 'flip-point' {
+    /* line 320, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/intro */
+    0%, 16% {
+      -ms-transform: rotate(90deg);
+      /* IE 9 */
+      -webkit-transform: rotate(90deg);
+      /* Chrome, Safari, Opera */
+      transform: rotate(90deg); }
+
+    /* line 325, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/intro */
+    25% {
+      -ms-transform: rotate(0deg);
+      /* IE 9 */
+      -webkit-transform: rotate(0deg);
+      /* Chrome, Safari, Opera */
+      transform: rotate(0deg); }
+
+    /* line 330, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/intro */
+    42% {
+      -webkit-transform: rotateX(0deg);
+      /* Chrome, Safari, Opera */
+      transform: rotateX(0deg); }
+
+    /* line 334, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/intro */
+    48% {
+      -webkit-transform: rotateX(0deg);
+      /* Chrome, Safari, Opera */
+      transform: rotateX(0deg); }
+
+    /* line 338, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/intro */
+    52% {
+      -webkit-transform: rotateY(0deg);
+      /* Chrome, Safari, Opera */
+      transform: rotateY(0deg); }
+
+    /* line 342, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/intro */
+    57% {
+      -webkit-transform: rotateX(0deg);
+      /* Chrome, Safari, Opera */
+      transform: rotateX(0deg); }
+
+    /* line 346, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/intro */
+    93% {
+      -ms-transform: rotate(0deg);
+      /* IE 9 */
+      -webkit-transform: rotate(0deg);
+      /* Chrome, Safari, Opera */
+      transform: rotate(0deg); }
+
+    /* line 352, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/intro */
+    99%, 100% {
+      -ms-transform: rotate(90deg);
+      /* IE 9 */
+      -webkit-transform: rotate(90deg);
+      /* Chrome, Safari, Opera */
+      transform: rotate(90deg); } }
+ }
+
+/*
+.logo-small {
+	display: inline-block;
+	padding: 6px 0 8px;
+	@include breakpoint(small) { width: 82px; }
+	@include breakpoint(newp) {	width: 82px; padding: 0 0 5px; }
+	@include breakpoint(oldp) {	width: 78px; padding: 0 0 5px; }
+}
+*/
+/* line 1, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/schedule */
+.schedule-container {
+  border-top: 25px solid rgba(76, 76, 76, 0.22);
+  border-bottom: 25px solid rgba(76, 76, 76, 0.22); }
+  @media only screen and (max-width: 768px) {
+    .schedule-container {
+      border-top: 15px solid rgba(76, 76, 76, 0.23);
+      border-bottom: 15px solid rgba(76, 76, 76, 0.23); } }
+
+/* line 10, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/schedule */
+.video-ratio-box {
+  height: 720px;
+  width: 100%;
+  background-color: #000;
+  display: block;
+  position: relative; }
+  @media only screen and (min-width: 1921px) and (max-width: 2565px) {
+    .video-ratio-box {
+      height: 770px; } }
+  @media only screen and (min-width: 1601px) and (max-width: 1920px) {
+    .video-ratio-box {
+      height: 710px; } }
+  @media only screen and (min-width: 1281px) and (max-width: 1600px) {
+    .video-ratio-box {
+      height: 500px; } }
+  @media only screen and (min-width: 1006px) and (max-width: 1280px) {
+    .video-ratio-box {
+      height: 420px; } }
+  @media only screen and (min-width: 756px) and (max-width: 1005px) {
+    .video-ratio-box {
+      height: 325px; } }
+  @media only screen and (min-width: 376px) and (max-width: 755px) {
+    .video-ratio-box {
+      height: 260px; } }
+  @media only screen and (min-width: 321px) and (max-width: 375px) {
+    .video-ratio-box {
+      height: 200px; } }
+  @media only screen and (max-width: 320px) {
+    .video-ratio-box {
+      height: 150px; } }
+
+@media only screen and (min-width: 1921px) and (max-width: 2565px) {
+  .schedule-h2 {
+    font-size: 195%; } }
+@media only screen and (min-width: 1601px) and (max-width: 1920px) {
+  .schedule-h2 {
+    font-size: 190%; } }
+@media only screen and (min-width: 1281px) and (max-width: 1600px) {
+  .schedule-h2 {
+    font-size: 170%; } }
+@media only screen and (min-width: 1006px) and (max-width: 1280px) {
+  .schedule-h2 {
+    font-size: 160%; } }
+@media only screen and (min-width: 756px) and (max-width: 1005px) {
+  .schedule-h2 {
+    font-size: 140%; } }
+@media only screen and (min-width: 376px) and (max-width: 755px) {
+  .schedule-h2 {
+    font-size: 90%; } }
+@media only screen and (min-width: 321px) and (max-width: 375px) {
+  .schedule-h2 {
+    font-size: 70%; } }
+@media only screen and (max-width: 320px) {
+  .schedule-h2 {
+    font-size: 65%; } }
+
+/* line 39, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/schedule */
+.covervid-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%; }
+
+/* line 49, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/schedule */
+.schedule-head {
+  position: absolute;
+  width: 100%;
+  height: 37%;
+  top: -25%;
+  bottom: 0;
+  margin: auto;
+  opacity: 0.99;
+  text-shadow: 4px 5px 20px #000000;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  text-align: center;
+  line-height: 1.2;
+  color: #fff; }
+  @media only screen and (min-width: 1921px) and (max-width: 2565px) {
+    .schedule-head {
+      font-size: 84px;
+      font-size: 5.25rem; } }
+  @media only screen and (min-width: 1601px) and (max-width: 1920px) {
+    .schedule-head {
+      font-size: 64px;
+      font-size: 4rem; } }
+  @media only screen and (min-width: 1281px) and (max-width: 1600px) {
+    .schedule-head {
+      font-size: 54px;
+      font-size: 3.375rem; } }
+  @media only screen and (min-width: 1006px) and (max-width: 1280px) {
+    .schedule-head {
+      font-size: 44px;
+      font-size: 2.75rem; } }
+  @media only screen and (min-width: 756px) and (max-width: 1005px) {
+    .schedule-head {
+      font-size: 34px;
+      font-size: 2.125rem; } }
+  @media only screen and (min-width: 376px) and (max-width: 755px) {
+    .schedule-head {
+      font-size: 30px;
+      font-size: 1.875rem; } }
+  @media only screen and (min-width: 321px) and (max-width: 375px) {
+    .schedule-head {
+      font-size: 26px;
+      font-size: 1.625rem; } }
+  @media only screen and (max-width: 320px) {
+    .schedule-head {
+      font-size: 20px;
+      font-size: 1.25rem; } }
+
+/* line 72, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/schedule */
+.schedule-content {
+  position: absolute;
+  top: 10%;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 80%;
+  margin: auto;
+  height: 18%;
+  z-index: 11;
+  text-align: center;
+  color: red; }
+
+/* line 85, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/schedule */
+.schedule-dates {
+  color: #fff;
+  opacity: 0.99;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 400;
+  width: 100%; }
+
+/* line 93, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/schedule */
+.video-content-overlay {
+  background-color: #000;
+  opacity: 0.65;
+  position: absolute;
+  top: 36%;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 31%;
+  z-index: 10; }
+
+/* line 106, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/schedule */
+.schedule-triangle {
+  width: 0;
+  height: 0;
+  border-color: rgba(76, 76, 76, 0.23) transparent transparent transparent;
+  display: inline-block;
+  border-style: solid;
+  border-width: 45px 45px 0 45px; }
+  @media only screen and (max-width: 768px) {
+    .schedule-triangle {
+      border-width: 25px 25px 0 25px; } }
+
+/* line 115, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/schedule */
+.schedule-triangle-position {
+  text-align: center; }
+
+/* line 1, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/twitter */
+.twitter-container {
+  position: relative;
+  margin: 10% 24% 15% 24%; }
+  @media only screen and (min-width: 1281px) and (max-width: 1600px) {
+    .twitter-container {
+      margin: 10% 18% 15% 18%; } }
+  @media only screen and (min-width: 1006px) and (max-width: 1280px) {
+    .twitter-container {
+      margin: 10% 16% 18% 16%; } }
+  @media only screen and (min-width: 756px) and (max-width: 1005px) {
+    .twitter-container {
+      margin: 10% 14% 15% 14%; } }
+  @media only screen and (min-width: 376px) and (max-width: 755px) {
+    .twitter-container {
+      margin: 10% 9% 20% 10%; } }
+  @media only screen and (min-width: 321px) and (max-width: 375px) {
+    .twitter-container {
+      margin: 10% 8.5% 25% 10%; } }
+  @media only screen and (max-width: 320px) {
+    .twitter-container {
+      margin: 10% 7.5% 25% 10%; } }
+
+/* line 12, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/twitter */
+.twitter-head {
+  color: #02518c;
+  line-height: 1.4; }
+
+/* line 17, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/twitter */
+.h1-subhead {
+  line-height: 1.4;
+  color: #02518c;
+  margin-bottom: 3.5%; }
+
+/* line 26, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/twitter */
+.tweet-box:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 30px 30px 0;
+  border-color: transparent #ffffff transparent transparent;
+  top: 0px;
+  right: 0px;
+  position: absolute;
+  z-index: 5; }
+  @media only screen and (min-width: 756px) and (max-width: 1005px) {
+    .tweet-box:after {
+      border-width: 0 27px 27px 0; } }
+  @media only screen and (min-width: 376px) and (max-width: 755px) {
+    .tweet-box:after {
+      border-width: 0 20px 20px 0; } }
+  @media only screen and (min-width: 321px) and (max-width: 375px) {
+    .tweet-box:after {
+      border-width: 0 20px 20px 0; } }
+  @media only screen and (max-width: 320px) {
+    .tweet-box:after {
+      border-width: 0 20px 20px 0; } }
+
+/* line 43, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/twitter */
+.tweet-box {
+  background-color: #14436d;
+  box-sizing: border-box;
+  padding: 3% 5% 3% 5%;
+  box-shadow: -7px 7px 0px 0px #e86767;
+  border-top-right-radius: 0;
+  position: relative;
+  z-index: 0;
+  margin-bottom: 5%; }
+  /* line 69, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/modules/utility */
+  .tweet-box:before, .tweet-box:after {
+    content: "";
+    display: table; }
+  /* line 73, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/modules/utility */
+  .tweet-box:after {
+    clear: both; }
+
+/* line 55, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/twitter */
+.tweet {
+  display: inline-block;
+  width: 100%;
+  box-sizing: border-box;
+  padding-right: 2%;
+  line-height: 1.4;
+  color: #beddfc;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 400; }
+  @media only screen and (min-width: 1921px) and (max-width: 2565px) {
+    .tweet {
+      font-size: 24px;
+      font-size: 1.5rem; } }
+  @media only screen and (min-width: 1601px) and (max-width: 1920px) {
+    .tweet {
+      font-size: 22px;
+      font-size: 1.375rem; } }
+  @media only screen and (min-width: 1281px) and (max-width: 1600px) {
+    .tweet {
+      font-size: 21px;
+      font-size: 1.3125rem; } }
+  @media only screen and (min-width: 1006px) and (max-width: 1280px) {
+    .tweet {
+      font-size: 18px;
+      font-size: 1.125rem; } }
+  @media only screen and (min-width: 756px) and (max-width: 1005px) {
+    .tweet {
+      font-size: 16px;
+      font-size: 1rem; } }
+  @media only screen and (min-width: 376px) and (max-width: 755px) {
+    .tweet {
+      font-size: 13px;
+      font-size: 0.8125rem; } }
+  @media only screen and (min-width: 321px) and (max-width: 375px) {
+    .tweet {
+      font-size: 11px;
+      font-size: 0.6875rem; } }
+  @media only screen and (max-width: 320px) {
+    .tweet {
+      font-size: 10px;
+      font-size: 0.625rem; } }
+
+/* line 74, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/twitter */
+.tweet-time {
+  margin-top: 1%;
+  box-sizing: border-box;
+  text-align: right;
+  color: #ff8677;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 46px; }
+  @media only screen and (min-width: 1921px) and (max-width: 2565px) {
+    .tweet-time {
+      font-size: 100%; } }
+  @media only screen and (min-width: 1921px) and (max-width: 2565px) {
+    .tweet-time {
+      font-size: 23px;
+      font-size: 1.4375rem; } }
+  @media only screen and (min-width: 1601px) and (max-width: 1920px) {
+    .tweet-time {
+      font-size: 23px;
+      font-size: 1.4375rem; } }
+  @media only screen and (min-width: 1281px) and (max-width: 1600px) {
+    .tweet-time {
+      font-size: 23px;
+      font-size: 1.4375rem; } }
+  @media only screen and (min-width: 1006px) and (max-width: 1280px) {
+    .tweet-time {
+      font-size: 19px;
+      font-size: 1.1875rem; } }
+  @media only screen and (min-width: 756px) and (max-width: 1005px) {
+    .tweet-time {
+      font-size: 17px;
+      font-size: 1.0625rem; } }
+  @media only screen and (min-width: 376px) and (max-width: 755px) {
+    .tweet-time {
+      font-size: 14px;
+      font-size: 0.875rem; } }
+  @media only screen and (min-width: 321px) and (max-width: 375px) {
+    .tweet-time {
+      font-size: 12px;
+      font-size: 0.75rem; } }
+  @media only screen and (max-width: 320px) {
+    .tweet-time {
+      font-size: 10px;
+      font-size: 0.625rem; } }
+
+/* line 93, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/twitter */
+.twitter-end-divider {
+  height: 10px;
+  width: 100%;
+  background-color: #e86767;
+  position: relative; }
+
+/* line 100, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/twitter */
+.twitter-triangle {
+  width: 0;
+  height: 0;
+  border-color: #e86767 transparent transparent transparent;
+  display: inline-block;
+  border-style: solid;
+  border-width: 45px 45px 0 45px; }
+  @media only screen and (max-width: 768px) {
+    .twitter-triangle {
+      border-width: 25px 25px 0 25px; } }
+
+/* line 109, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/twitter */
+.twitter-triangle-position {
+  text-align: center; }
+
+/* line 1, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/blog */
+.blog-container {
+  margin: 11% 11% 14%;
+  text-align: center; }
+  @media only screen and (min-width: 1281px) and (max-width: 1600px) {
+    .blog-container {
+      margin: 10% 2% 10%; } }
+  @media only screen and (min-width: 1006px) and (max-width: 1280px) {
+    .blog-container {
+      margin: 12% 20% 12%; } }
+  @media only screen and (min-width: 756px) and (max-width: 1005px) {
+    .blog-container {
+      margin: 10% 13% 10%; } }
+  @media only screen and (min-width: 376px) and (max-width: 755px) {
+    .blog-container {
+      margin: 13% 2% 17%; } }
+  @media only screen and (min-width: 321px) and (max-width: 375px) {
+    .blog-container {
+      margin: 14% 2% 14%; } }
+  @media only screen and (max-width: 320px) {
+    .blog-container {
+      margin: 13% 2% 13%; } }
+
+/* line 12, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/blog */
+.blog-head {
+  color: #02518c;
+  line-height: 1em;
+  margin: 5% 0 4%; }
+
+/* line 18, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/blog */
+.blog-subhead {
+  color: #02518c;
+  margin-bottom: 4%; }
+  @media only screen and (min-width: 1281px) and (max-width: 1600px) {
+    .blog-subhead {
+      margin: 0 3% 4%; } }
+  @media only screen and (min-width: 1006px) and (max-width: 1280px) {
+    .blog-subhead {
+      margin: 0 28% 4%; } }
+  @media only screen and (min-width: 756px) and (max-width: 1005px) {
+    .blog-subhead {
+      margin: 0 30% 4%; } }
+  @media only screen and (min-width: 376px) and (max-width: 755px) {
+    .blog-subhead {
+      margin: 0 25% 4%; } }
+  @media only screen and (min-width: 321px) and (max-width: 375px) {
+    .blog-subhead {
+      margin: 0 20% 4.5%; } }
+  @media only screen and (max-width: 320px) {
+    .blog-subhead {
+      margin: 0 20% 4.5%; } }
+
+/* line 31, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/blog */
+.blog-box {
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+  margin: 1% 1%; }
+
+/* line 38, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/blog */
+.blog-img {
+  width: 325px;
+  display: block;
+  opacity: 1;
+  -webkit-transition: 0.6s;
+  transition: 0.6s; }
+  @media only screen and (min-width: 1921px) and (max-width: 2565px) {
+    .blog-img {
+      width: 325px; } }
+  @media only screen and (min-width: 1601px) and (max-width: 1920px) {
+    .blog-img {
+      width: 270px; } }
+  @media only screen and (min-width: 1281px) and (max-width: 1600px) {
+    .blog-img {
+      width: 270px; } }
+  @media only screen and (min-width: 1006px) and (max-width: 1280px) {
+    .blog-img {
+      width: 240px; } }
+  @media only screen and (min-width: 756px) and (max-width: 1005px) {
+    .blog-img {
+      width: 230px; } }
+  @media only screen and (min-width: 376px) and (max-width: 755px) {
+    .blog-img {
+      width: 220px; } }
+  @media only screen and (min-width: 321px) and (max-width: 375px) {
+    .blog-img {
+      width: 215px; } }
+  @media only screen and (max-width: 320px) {
+    .blog-img {
+      width: 215px; } }
+
+/* line 54, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/blog */
+.blog-box-body {
+  bottom: 0;
+  left: 0;
+  top: 0;
+  right: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 3em 2em;
+  position: absolute;
+  text-align: center;
+  -webkit-transition: 0.6s;
+  transition: 0.6s; }
+  @media only screen and (min-width: 1921px) and (max-width: 2565px) {
+    .blog-box-body {
+      padding-top: 2.6em; } }
+  @media only screen and (min-width: 1601px) and (max-width: 1920px) {
+    .blog-box-body {
+      padding-top: 2.6em; } }
+  @media only screen and (min-width: 1281px) and (max-width: 1600px) {
+    .blog-box-body {
+      padding-top: 2.6em; } }
+  @media only screen and (min-width: 1006px) and (max-width: 1280px) {
+    .blog-box-body {
+      padding-top: 2.6em; } }
+  @media only screen and (min-width: 756px) and (max-width: 1005px) {
+    .blog-box-body {
+      padding-top: 2.2em; } }
+  @media only screen and (min-width: 376px) and (max-width: 755px) {
+    .blog-box-body {
+      padding-top: 1.8em; } }
+  @media only screen and (min-width: 321px) and (max-width: 375px) {
+    .blog-box-body {
+      padding-top: 1.8em; } }
+  @media only screen and (max-width: 320px) {
+    .blog-box-body {
+      padding-top: 1.8em; } }
+
+/* line 76, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/blog */
+.blog-box-head h2 {
+  color: #fff;
+  opacity: 0;
+  -webkit-transition: 1.4s;
+  transition: 1.4s; }
+  @media only screen and (min-width: 1921px) and (max-width: 2565px) {
+    .blog-box-head h2 {
+      font-size: 20px;
+      font-size: 1.25rem; } }
+  @media only screen and (min-width: 1601px) and (max-width: 1920px) {
+    .blog-box-head h2 {
+      font-size: 19px;
+      font-size: 1.1875rem; } }
+  @media only screen and (min-width: 1281px) and (max-width: 1600px) {
+    .blog-box-head h2 {
+      font-size: 19px;
+      font-size: 1.1875rem; } }
+  @media only screen and (min-width: 1006px) and (max-width: 1280px) {
+    .blog-box-head h2 {
+      font-size: 14.5px;
+      font-size: 0.90625rem; } }
+  @media only screen and (min-width: 756px) and (max-width: 1005px) {
+    .blog-box-head h2 {
+      font-size: 14.5px;
+      font-size: 0.90625rem;
+      margin-bottom: 9%; } }
+  @media only screen and (min-width: 376px) and (max-width: 755px) {
+    .blog-box-head h2 {
+      font-size: 14.5px;
+      font-size: 0.90625rem;
+      padding-bottom: 0;
+      margin-bottom: 5px; } }
+  @media only screen and (min-width: 321px) and (max-width: 375px) {
+    .blog-box-head h2 {
+      font-size: 14.5px;
+      font-size: 0.90625rem;
+      padding-bottom: 0;
+      margin-bottom: 5px; } }
+  @media only screen and (max-width: 320px) {
+    .blog-box-head h2 {
+      font-size: 14.5px;
+      font-size: 0.90625rem;
+      padding-bottom: 0;
+      margin-bottom: 5px; } }
+
+/* line 103, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/blog */
+.blog-box-body p {
+  color: #fff;
+  opacity: 0;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 400;
+  -webkit-transition: all 2s;
+  transition: all 2s;
+  padding-bottom: 0;
+  margin-top: -3%;
+  margin-bottom: 2%; }
+  @media only screen and (min-width: 1921px) and (max-width: 2565px) {
+    .blog-box-body p {
+      font-size: 17px;
+      font-size: 1.0625rem; } }
+  @media only screen and (min-width: 1601px) and (max-width: 1920px) {
+    .blog-box-body p {
+      font-size: 16px;
+      font-size: 1rem;
+      margin-top: -7%; } }
+  @media only screen and (min-width: 1281px) and (max-width: 1600px) {
+    .blog-box-body p {
+      font-size: 16px;
+      font-size: 1rem;
+      margin-top: -7%; } }
+  @media only screen and (min-width: 1006px) and (max-width: 1280px) {
+    .blog-box-body p {
+      font-size: 13px;
+      font-size: 0.8125rem;
+      margin-top: -6%; } }
+  @media only screen and (min-width: 756px) and (max-width: 1005px) {
+    .blog-box-body p {
+      font-size: 13px;
+      font-size: 0.8125rem;
+      margin-top: -4%; } }
+  @media only screen and (min-width: 376px) and (max-width: 755px) {
+    .blog-box-body p {
+      font-size: 13px;
+      font-size: 0.8125rem; } }
+  @media only screen and (min-width: 321px) and (max-width: 375px) {
+    .blog-box-body p {
+      font-size: 13px;
+      font-size: 0.8125rem; } }
+  @media only screen and (max-width: 320px) {
+    .blog-box-body p {
+      font-size: 13px;
+      font-size: 0.8125rem; } }
+
+/* line 123, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/blog */
+.cross-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  -webkit-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  transform: scale(1.3);
+  -webkit-transition: all 0.7s;
+  transition: all 0.7s; }
+
+/* line 139, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/blog */
+.blog-box:hover .cross-overlay {
+  opacity: 0.5;
+  -webkit-transform: scale(0.93);
+  -ms-transform: scale(0.93);
+  transform: scale(0.93); }
+
+/* line 149, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/blog */
+.blog-box-body:hover, .blog-box-body:hover p, .blog-box-body:hover h2 {
+  display: block;
+  opacity: 1;
+  background-color: #14436d; }
+
+/* line 155, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/blog */
+.blog-box-body:hover .blog-click {
+  opacity: 1;
+  width: 30%; }
+
+/* line 161, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/blog */
+.blog-click {
+  position: relative;
+  color: #ff8677;
+  opacity: 0;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 400;
+  -webkit-transition: all 0.7s;
+  transition: all 0.7s; }
+  @media only screen and (min-width: 1921px) and (max-width: 2565px) {
+    .blog-click {
+      font-size: 17px;
+      font-size: 1.0625rem; } }
+  @media only screen and (min-width: 1601px) and (max-width: 1920px) {
+    .blog-click {
+      font-size: 16px;
+      font-size: 1rem; } }
+  @media only screen and (min-width: 1281px) and (max-width: 1600px) {
+    .blog-click {
+      font-size: 16px;
+      font-size: 1rem; } }
+  @media only screen and (min-width: 1006px) and (max-width: 1280px) {
+    .blog-click {
+      font-size: 13px;
+      font-size: 0.8125rem; } }
+  @media only screen and (min-width: 756px) and (max-width: 1005px) {
+    .blog-click {
+      font-size: 13px;
+      font-size: 0.8125rem; } }
+  @media only screen and (min-width: 376px) and (max-width: 755px) {
+    .blog-click {
+      font-size: 13px;
+      font-size: 0.8125rem; } }
+  @media only screen and (min-width: 321px) and (max-width: 375px) {
+    .blog-click {
+      font-size: 13px;
+      font-size: 0.8125rem; } }
+  @media only screen and (max-width: 320px) {
+    .blog-click {
+      font-size: 13px;
+      font-size: 0.8125rem; } }
+
+/* line 179, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/blog */
+.blog-box-body h2 {
+  margin-top: 0; }
+
+/* line 183, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/blog */
+.blog-end-divider {
+  height: 10px;
+  width: 100%;
+  background-color: #3f6c95;
+  position: relative; }
+
+/* line 190, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/blog */
+.blog-triangle {
+  width: 0;
+  height: 0;
+  border-color: #3f6c95 transparent transparent transparent;
+  display: inline-block;
+  border-style: solid;
+  border-width: 45px 45px 0 45px; }
+  @media only screen and (max-width: 768px) {
+    .blog-triangle {
+      border-width: 25px 25px 0 25px; } }
+
+/* line 199, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/blog */
+.blog-triangle-position {
+  text-align: center; }
+
+/* line 1, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/videos */
+.video-wrapper {
+  margin: 8% 10% 12%; }
+
+/* line 4, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/videos */
+.video-head {
+  color: #02518c;
+  line-height: 1em;
+  margin: 5% 1% 1% 1%;
+  text-align: center; }
+
+/* line 10, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/videos */
+.video-subhead {
+  color: #02518c;
+  margin: 2% 10% 3%;
+  text-align: center; }
+
+/* line 20, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/videos */
+.tabs {
+  text-decoration: none;
+  list-style-type: none;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  margin: 0 0 4%;
+  padding: 0; }
+
+/* line 33, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/videos */
+.tab-boxes a:focus, .icon-latest:focus, .tab-boxes:focus, .tab:focus {
+  outline: 0; }
+
+/* line 37, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/videos */
+.tab-boxes {
+  display: inline; }
+
+/* line 41, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/videos */
+.tab-boxes a {
+  display: inline-block;
+  width: 12%;
+  margin: 1% 1%; }
+  @media only screen and (min-width: 1281px) and (max-width: 1600px) {
+    .tab-boxes a {
+      width: 13%; } }
+  @media only screen and (min-width: 1006px) and (max-width: 1280px) {
+    .tab-boxes a {
+      width: 13%; } }
+  @media only screen and (min-width: 756px) and (max-width: 1005px) {
+    .tab-boxes a {
+      width: 14%; } }
+  @media only screen and (min-width: 376px) and (max-width: 755px) {
+    .tab-boxes a {
+      width: 15%;
+      margin: 4% 0 2%; } }
+  @media only screen and (min-width: 321px) and (max-width: 375px) {
+    .tab-boxes a {
+      width: 15%;
+      margin: 4% 0 2%; } }
+  @media only screen and (max-width: 320px) {
+    .tab-boxes a {
+      width: 15%;
+      margin: 4% 0 2%; } }
+
+/* line 57, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/videos */
+.active {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out; }
+
+/* line 65, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/videos */
+.tab-wrapper {
+  width: 70%;
+  margin: 0% auto;
+  -webkit-transition: all 0.9s ease-in-out;
+  -moz-transition: all 0.9s ease-in-out;
+  -o-transition: all 0.9s ease-in-out;
+  -ms-transition: all 0.9s ease-in-out;
+  transition: all 0.9s ease-in-out;
+  background-color: #14436d; }
+  @media only screen and (min-width: 1281px) and (max-width: 1600px) {
+    .tab-wrapper {
+      width: 75%; } }
+  @media only screen and (min-width: 1006px) and (max-width: 1280px) {
+    .tab-wrapper {
+      width: 77%; } }
+  @media only screen and (min-width: 756px) and (max-width: 1005px) {
+    .tab-wrapper {
+      width: 82%; } }
+  @media only screen and (min-width: 376px) and (max-width: 755px) {
+    .tab-wrapper {
+      width: 90%; } }
+  @media only screen and (min-width: 321px) and (max-width: 375px) {
+    .tab-wrapper {
+      width: 90%; } }
+  @media only screen and (max-width: 320px) {
+    .tab-wrapper {
+      width: 90%; } }
+
+/* line 82, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/videos */
+#tab1 {
+  transition: all 0.8s ease-in-out; }
+
+/* line 91, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/videos */
+#tab1, #tab2, #tab3, #tab4, #tab5, #tab6 {
+  -webkit-transition: all 0.9s ease-in-out;
+  -moz-transition: all 0.9s ease-in-out;
+  -o-transition: all 0.9s ease-in-out;
+  -ms-transition: all 0.9s ease-in-out;
+  transition: all 0.9s ease-in-out;
+  box-sizing: border-box;
+  border: 5px solid #fff;
+  box-shadow: 0px 0px 0px 7px #cf6148; }
+
+/* line 102, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/videos */
+.video-tab-head {
+  -webkit-transition: all 0.9s ease-in-out;
+  -moz-transition: all 0.9s ease-in-out;
+  -o-transition: all 0.9s ease-in-out;
+  -ms-transition: all 0.9s ease-in-out;
+  transition: all 0.9s ease-in-out;
+  color: #ff8677;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 0;
+  font-size: 42px;
+  font-size: 2.625rem; }
+  @media only screen and (min-width: 1281px) and (max-width: 1600px) {
+    .video-tab-head {
+      font-size: 35px;
+      font-size: 2.1875rem; } }
+  @media only screen and (min-width: 1006px) and (max-width: 1280px) {
+    .video-tab-head {
+      font-size: 26px;
+      font-size: 1.625rem; } }
+  @media only screen and (min-width: 756px) and (max-width: 1005px) {
+    .video-tab-head {
+      font-size: 22px;
+      font-size: 1.375rem; } }
+  @media only screen and (min-width: 376px) and (max-width: 755px) {
+    .video-tab-head {
+      font-size: 18px;
+      font-size: 1.125rem; } }
+  @media only screen and (min-width: 321px) and (max-width: 375px) {
+    .video-tab-head {
+      font-size: 16px;
+      font-size: 1rem; } }
+  @media only screen and (max-width: 320px) {
+    .video-tab-head {
+      font-size: 15px;
+      font-size: 0.9375rem; } }
+
+/* line 122, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/videos */
+.video-tab-links {
+  -webkit-transition: all 0.9s ease-in-out;
+  -moz-transition: all 0.9s ease-in-out;
+  -o-transition: all 0.9s ease-in-out;
+  -ms-transition: all 0.9s ease-in-out;
+  transition: all 0.9s ease-in-out;
+  text-align: center;
+  box-sizing: border-box;
+  line-height: 1.4;
+  padding: 0 3% 0%;
+  font-family: 'Roboto Slab', serif; }
+
+/* line 135, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/videos */
+.last-tab-link {
+  padding-bottom: 4%; }
+
+/* line 140, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/videos */
+.icon-latest {
+  text-decoration: none;
+  position: relative;
+  transition: 0.4s;
+  -webkit-appearance: none;
+  cursor: pointer; }
+
+/* line 150, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/videos */
+.icon-latest:after {
+  content: '';
+  position: absolute;
+  bottom: 0px;
+  left: 10%;
+  width: 80%;
+  height: 40px;
+  opacity: 1;
+  transition: 0.4s;
+  transform: translateY(-20px); }
+
+/* line 162, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/videos */
+.icon-latest:hover {
+  transform: translateY(-20px); }
+
+/* line 166, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/videos */
+.icon-latest:hover:after {
+  opacity: 1;
+  transform: translateY(0); }
+
+/* line 171, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/videos */
+.video-end-divider {
+  height: 10px;
+  width: 100%;
+  background-color: #cf6148;
+  position: relative; }
+  @media only screen and (min-width: 1281px) and (max-width: 1600px) {
+    .video-end-divider {
+      margin-top: 20%; } }
+  @media only screen and (min-width: 1006px) and (max-width: 1280px) {
+    .video-end-divider {
+      margin-top: 20%; } }
+  @media only screen and (min-width: 756px) and (max-width: 1005px) {
+    .video-end-divider {
+      margin-top: 20%; } }
+  @media only screen and (min-width: 376px) and (max-width: 755px) {
+    .video-end-divider {
+      margin-top: 20%; } }
+  @media only screen and (min-width: 321px) and (max-width: 375px) {
+    .video-end-divider {
+      margin-top: 20%; } }
+  @media only screen and (max-width: 320px) {
+    .video-end-divider {
+      margin-top: 20%; } }
+
+/* line 184, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/videos */
+.video-triangle {
+  width: 0;
+  height: 0;
+  border-color: #cf6148 transparent transparent transparent;
+  display: inline-block;
+  border-style: solid;
+  border-width: 45px 45px 0 45px; }
+  @media only screen and (max-width: 768px) {
+    .video-triangle {
+      border-width: 25px 25px 0 25px; } }
+
+/* line 193, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/videos */
+.video-triangle-position {
+  text-align: center; }
+
+/* line 2, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/team */
+.team-wrapper {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  margin: 8% 14% 12%;
+  text-align: center; }
+  @media only screen and (min-width: 1281px) and (max-width: 1600px) {
+    .team-wrapper {
+      margin: 10% 3% 10%; } }
+  @media only screen and (min-width: 1006px) and (max-width: 1280px) {
+    .team-wrapper {
+      margin: 12% 2% 12%; } }
+  @media only screen and (min-width: 756px) and (max-width: 1005px) {
+    .team-wrapper {
+      margin: 10% 3% 10%; } }
+  @media only screen and (min-width: 376px) and (max-width: 755px) {
+    .team-wrapper {
+      margin: 13% 2% 15%; } }
+  @media only screen and (min-width: 321px) and (max-width: 375px) {
+    .team-wrapper {
+      margin: 14% 1% 14%; } }
+  @media only screen and (max-width: 320px) {
+    .team-wrapper {
+      margin: 13% 1% 13%; } }
+
+/* line 15, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/team */
+.team-subhead {
+  color: #02518c;
+  margin-top: 3%; }
+
+/* line 20, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/team */
+.team-header-wrapper {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  margin-bottom: 125px; }
+  @media only screen and (min-width: 1281px) and (max-width: 1600px) {
+    .team-header-wrapper {
+      margin-bottom: 115px; } }
+  @media only screen and (min-width: 1006px) and (max-width: 1280px) {
+    .team-header-wrapper {
+      margin-bottom: 105px; } }
+  @media only screen and (min-width: 756px) and (max-width: 1005px) {
+    .team-header-wrapper {
+      margin-bottom: 95px; } }
+  @media only screen and (min-width: 376px) and (max-width: 755px) {
+    .team-header-wrapper {
+      margin-bottom: 85px; } }
+  @media only screen and (min-width: 321px) and (max-width: 375px) {
+    .team-header-wrapper {
+      margin-bottom: 100px; } }
+  @media only screen and (max-width: 320px) {
+    .team-header-wrapper {
+      margin-bottom: 100px; } }
+
+/* line 34, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/team */
+.profile-box h1 {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  margin-top: -25%;
+  line-height: 1;
+  text-align: center;
+  color: #fff;
+  opacity: 0.9;
+  -webkit-transition: all 0.44s ease-in-out;
+  transition: all 0.44s ease-in-out; }
+  @media only screen and (min-width: 1601px) and (max-width: 1920px) {
+    .profile-box h1 {
+      font-size: 28px;
+      font-size: 1.75rem; } }
+  @media only screen and (min-width: 1281px) and (max-width: 1600px) {
+    .profile-box h1 {
+      font-size: 19px;
+      font-size: 1.1875rem; } }
+  @media only screen and (min-width: 1006px) and (max-width: 1280px) {
+    .profile-box h1 {
+      margin-top: -27%;
+      font-size: 18px;
+      font-size: 1.125rem; } }
+  @media only screen and (min-width: 756px) and (max-width: 1005px) {
+    .profile-box h1 {
+      margin-top: -26%;
+      font-size: 18px;
+      font-size: 1.125rem; } }
+  @media only screen and (min-width: 376px) and (max-width: 755px) {
+    .profile-box h1 {
+      margin-top: -25%;
+      font-size: 18px;
+      font-size: 1.125rem; } }
+  @media only screen and (min-width: 321px) and (max-width: 375px) {
+    .profile-box h1 {
+      margin-top: -14%;
+      font-size: 15px;
+      font-size: 0.9375rem; } }
+  @media only screen and (max-width: 320px) {
+    .profile-box h1 {
+      margin-top: -12%;
+      font-size: 14px;
+      font-size: 0.875rem; } }
+
+/* line 52, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/team */
+.profile-box p {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  text-align: center;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 400;
+  color: #beddfc;
+  opacity: 0.9;
+  -webkit-transition: all 0.44s ease-in-out;
+  transition: all 0.44s ease-in-out; }
+  @media only screen and (min-width: 1601px) and (max-width: 1920px) {
+    .profile-box p {
+      font-size: 16px;
+      font-size: 1rem; } }
+  @media only screen and (min-width: 1281px) and (max-width: 1600px) {
+    .profile-box p {
+      font-size: 16px;
+      font-size: 1rem; } }
+  @media only screen and (min-width: 1006px) and (max-width: 1280px) {
+    .profile-box p {
+      font-size: 14px;
+      font-size: 0.875rem; } }
+  @media only screen and (min-width: 756px) and (max-width: 1005px) {
+    .profile-box p {
+      font-size: 13px;
+      font-size: 0.8125rem; } }
+  @media only screen and (min-width: 376px) and (max-width: 755px) {
+    .profile-box p {
+      font-size: 13px;
+      font-size: 0.8125rem; } }
+  @media only screen and (min-width: 321px) and (max-width: 375px) {
+    .profile-box p {
+      font-size: 13px;
+      font-size: 0.8125rem; } }
+  @media only screen and (max-width: 320px) {
+    .profile-box p {
+      font-size: 12px;
+      font-size: 0.75rem; } }
+
+/* line 73, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/team */
+.profile-box {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  width: 320px;
+  margin: 20px 25px 100px;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  text-decoration: none;
+  list-style-type: none;
+  background-color: #3f6c95;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out; }
+  @media only screen and (min-width: 1281px) and (max-width: 1600px) {
+    .profile-box {
+      margin: 20px 10px 100px; } }
+  @media only screen and (min-width: 1006px) and (max-width: 1280px) {
+    .profile-box {
+      width: 300px;
+      margin: 20px 10px 100px; } }
+  @media only screen and (min-width: 756px) and (max-width: 1005px) {
+    .profile-box {
+      width: 300px;
+      margin: 20px 10px 100px; } }
+  @media only screen and (min-width: 376px) and (max-width: 755px) {
+    .profile-box {
+      width: 240px;
+      margin: 20px 2px 55px; } }
+  @media only screen and (min-width: 321px) and (max-width: 375px) {
+    .profile-box {
+      width: 240px;
+      margin: 20px 2px 40px; } }
+  @media only screen and (max-width: 320px) {
+    .profile-box {
+      width: 240px;
+      margin: 20px 2px 40px; } }
+
+/* line 95, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/team */
+.profile-size {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  height: 220px;
+  position: relative;
+  border-bottom: 2px solid #fff;
+  margin-bottom: 5%;
+  background-color: #14436d;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out; }
+  @media only screen and (min-width: 1281px) and (max-width: 1600px) {
+    .profile-size {
+      height: 210px; } }
+  @media only screen and (min-width: 1006px) and (max-width: 1280px) {
+    .profile-size {
+      height: 200px; } }
+  @media only screen and (min-width: 756px) and (max-width: 1005px) {
+    .profile-size {
+      height: 190px; } }
+  @media only screen and (min-width: 376px) and (max-width: 755px) {
+    .profile-size {
+      height: 175px; } }
+  @media only screen and (min-width: 321px) and (max-width: 375px) {
+    .profile-size {
+      height: 170px; } }
+  @media only screen and (max-width: 320px) {
+    .profile-size {
+      height: 170px; } }
+
+/* line 113, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/team */
+.profile-container {
+  padding: 0; }
+
+/* line 118, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/team */
+.img-wrapper {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  position: relative;
+  display: inline-block;
+  width: 180px; }
+  @media only screen and (min-width: 1006px) and (max-width: 1280px) {
+    .img-wrapper {
+      width: 170px; } }
+  @media only screen and (min-width: 756px) and (max-width: 1005px) {
+    .img-wrapper {
+      width: 160px; } }
+  @media only screen and (min-width: 376px) and (max-width: 755px) {
+    .img-wrapper {
+      width: 140px; } }
+  @media only screen and (min-width: 321px) and (max-width: 375px) {
+    .img-wrapper {
+      width: 100px; } }
+  @media only screen and (max-width: 320px) {
+    .img-wrapper {
+      width: 90px; } }
+
+/* line 131, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/team */
+.img-position {
+  top: -100px;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  -webkit-transition: all 0.44s ease-in-out;
+  transition: all 0.44s ease-in-out;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0); }
+  @media only screen and (min-width: 1006px) and (max-width: 1280px) {
+    .img-position {
+      top: -100px; } }
+  @media only screen and (min-width: 756px) and (max-width: 1005px) {
+    .img-position {
+      top: -90px; } }
+  @media only screen and (min-width: 376px) and (max-width: 755px) {
+    .img-position {
+      top: -70px; } }
+  @media only screen and (min-width: 321px) and (max-width: 375px) {
+    .img-position {
+      top: -55px; } }
+  @media only screen and (max-width: 320px) {
+    .img-position {
+      top: -45px; } }
+
+/* line 146, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/team */
+.img-wrapper img {
+  max-width: 100%; }
+
+/* line 151, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/team */
+.profile-overlay {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  top: 0px;
+  padding: 0% 3%;
+  position: absolute;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 400;
+  text-align: center;
+  color: #fff;
+  opacity: 0;
+  -webkit-transition: all 0.44s ease-in-out;
+  transition: all 0.44s ease-in-out; }
+  @media only screen and (min-width: 1281px) and (max-width: 1600px) {
+    .profile-overlay {
+      padding: 0% 3%; } }
+  @media only screen and (min-width: 1006px) and (max-width: 1280px) {
+    .profile-overlay {
+      padding: 0% 9%; } }
+  @media only screen and (min-width: 756px) and (max-width: 1005px) {
+    .profile-overlay {
+      padding: 0% 3%; } }
+  @media only screen and (min-width: 376px) and (max-width: 755px) {
+    .profile-overlay {
+      padding: 0% 3%; } }
+  @media only screen and (min-width: 321px) and (max-width: 375px) {
+    .profile-overlay {
+      padding: 0% 3%; } }
+  @media only screen and (max-width: 320px) {
+    .profile-overlay {
+      padding: 0% 3%; } }
+
+/* line 178, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/team */
+.profile-box:hover {
+  background-color: #fff; }
+
+/* line 181, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/team */
+.profile-box:hover .profile-size {
+  background-color: #14436d; }
+
+/* line 186, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/team */
+.profile-box:hover .img-position {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  top: -170px;
+  opacity: 1;
+  -webkit-transform: rotateX(-90deg);
+  transform: rotateX(-90deg); }
+  @media only screen and (min-width: 756px) and (max-width: 1005px) {
+    .profile-box:hover .img-position {
+      top: -80px;
+      opacity: 0;
+      -webkit-transform: rotateX(0deg);
+      transform: rotateX(0deg); } }
+  @media only screen and (min-width: 376px) and (max-width: 755px) {
+    .profile-box:hover .img-position {
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      top: -80px;
+      opacity: 0;
+      -webkit-transform: rotateX(0deg);
+      transform: rotateX(0deg); } }
+  @media only screen and (min-width: 321px) and (max-width: 375px) {
+    .profile-box:hover .img-position {
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      top: -80px;
+      opacity: 0;
+      -webkit-transform: rotateX(0deg);
+      transform: rotateX(0deg); } }
+  @media only screen and (max-width: 320px) {
+    .profile-box:hover .img-position {
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      top: -80px;
+      opacity: 0;
+      -webkit-transform: rotateX(0deg);
+      transform: rotateX(0deg); } }
+
+/* line 230, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/team */
+.profile-box:hover p, .profile-box:hover h1 {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  opacity: 0;
+  margin-top: 35px;
+  padding: 0;
+  margin-bottom: 0; }
+  @media only screen and (min-width: 756px) and (max-width: 1005px) {
+    .profile-box:hover p, .profile-box:hover h1 {
+      margin-top: 0px; } }
+  @media only screen and (min-width: 376px) and (max-width: 755px) {
+    .profile-box:hover p, .profile-box:hover h1 {
+      margin-top: 0px; } }
+  @media only screen and (min-width: 321px) and (max-width: 375px) {
+    .profile-box:hover p, .profile-box:hover h1 {
+      margin-top: 0px; } }
+  @media only screen and (max-width: 320px) {
+    .profile-box:hover p, .profile-box:hover h1 {
+      margin-top: 0px; } }
+
+/* line 244, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/team */
+.profile-box:hover .profile-overlay {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  top: 110px;
+  margin-top: -85px;
+  opacity: 1; }
+  @media only screen and (min-width: 756px) and (max-width: 1005px) {
+    .profile-box:hover .profile-overlay {
+      top: 120px;
+      margin-top: -95px; } }
+  @media only screen and (min-width: 376px) and (max-width: 755px) {
+    .profile-box:hover .profile-overlay {
+      top: 110px;
+      margin-top: -95px; } }
+  @media only screen and (min-width: 321px) and (max-width: 375px) {
+    .profile-box:hover .profile-overlay {
+      top: 110px;
+      margin-top: -95px; } }
+  @media only screen and (max-width: 320px) {
+    .profile-box:hover .profile-overlay {
+      top: 110px;
+      margin-top: -95px; } }
+
+/* line 259, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/team */
+.blog-end-divider {
+  height: 10px;
+  width: 100%;
+  background-color: #3f6c95;
+  position: relative; }
+
+/* line 266, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/team */
+.blog-triangle {
+  width: 0;
+  height: 0;
+  border-color: #3f6c95 transparent transparent transparent;
+  display: inline-block;
+  border-style: solid;
+  border-width: 45px 45px 0 45px; }
+  @media only screen and (max-width: 768px) {
+    .blog-triangle {
+      border-width: 25px 25px 0 25px; } }
+
+/* line 276, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/team */
+.blog-triangle-position {
+  text-align: center; }
+
+/* line 1, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/stats */
+.stats-wrapper {
+  margin: 10% 20%; }
+
+/* line 5, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/stats */
+.stats-container {
+  text-align: center;
+  margin: 20%; }
+
+/* line 10, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/stats */
+.counter {
+  font-family: 'Roboto Slab', serif;
+  color: #e86767;
+  font-weight: 400;
+  line-height: 1.72em; }
+  @media only screen and (min-width: 1921px) and (max-width: 2565px) {
+    .counter {
+      font-size: 70px;
+      font-size: 4.375rem; } }
+  @media only screen and (min-width: 1601px) and (max-width: 1920px) {
+    .counter {
+      font-size: 64px;
+      font-size: 4rem; } }
+  @media only screen and (min-width: 1281px) and (max-width: 1600px) {
+    .counter {
+      font-size: 54px;
+      font-size: 3.375rem; } }
+  @media only screen and (min-width: 1006px) and (max-width: 1280px) {
+    .counter {
+      font-size: 44px;
+      font-size: 2.75rem; } }
+  @media only screen and (min-width: 756px) and (max-width: 1005px) {
+    .counter {
+      font-size: 34px;
+      font-size: 2.125rem; } }
+  @media only screen and (min-width: 376px) and (max-width: 755px) {
+    .counter {
+      font-size: 30px;
+      font-size: 1.875rem; } }
+  @media only screen and (min-width: 321px) and (max-width: 375px) {
+    .counter {
+      font-size: 26px;
+      font-size: 1.625rem; } }
+  @media only screen and (max-width: 320px) {
+    .counter {
+      font-size: 20px;
+      font-size: 1.25rem; } }
+
+/* line 1, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/contact */
+.contact-wrapper {
+  margin: 10% 5% 10%;
+  text-align: center; }
+
+/* line 5, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/contact */
+.contact-container {
+  margin: 0 15% -2%; }
+
+/* line 8, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/contact */
+.contact-subhead {
+  text-align: center; }
+
+/* line 12, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/contact */
+.instructions {
+  border: 10px solid #14436d;
+  box-shadow: -7px 7px 0px 0px #e86767;
+  background-color: #14436d;
+  padding: 2% 4%;
+  text-align: left;
+  font-family: 'Roboto Slab', serif;
+  color: #fff;
+  font-weight: 400;
+  line-height: 1.5em; }
+  @media only screen and (min-width: 1921px) and (max-width: 2565px) {
+    .instructions {
+      font-size: 20px;
+      font-size: 1.25rem; } }
+  @media only screen and (min-width: 1601px) and (max-width: 1920px) {
+    .instructions {
+      font-size: 20px;
+      font-size: 1.25rem; } }
+  @media only screen and (min-width: 1281px) and (max-width: 1600px) {
+    .instructions {
+      font-size: 19px;
+      font-size: 1.1875rem; } }
+  @media only screen and (min-width: 1006px) and (max-width: 1280px) {
+    .instructions {
+      font-size: 18px;
+      font-size: 1.125rem; } }
+  @media only screen and (min-width: 756px) and (max-width: 1005px) {
+    .instructions {
+      font-size: 17px;
+      font-size: 1.0625rem; } }
+  @media only screen and (min-width: 376px) and (max-width: 755px) {
+    .instructions {
+      font-size: 14px;
+      font-size: 0.875rem; } }
+  @media only screen and (min-width: 321px) and (max-width: 375px) {
+    .instructions {
+      font-size: 12px;
+      font-size: 0.75rem; } }
+  @media only screen and (max-width: 320px) {
+    .instructions {
+      font-size: 10px;
+      font-size: 0.625rem; } }
+
+/* line 32, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/contact */
+.instructions-bold {
+  font-weight: 700;
+  color: #ff8677; }
+
+/* line 37, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/contact */
+.book-call {
+  display: inline-block;
+  margin-top: -1%;
+  border: 10px double #fff;
+  box-shadow: -4px 4px 0px 0px #e86767;
+  border-radius: 0.5em;
+  background-color: #14436d;
+  padding: 0.6%;
+  color: #fff;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 400;
+  transition: all 0.5s ease-in-out; }
+  @media only screen and (min-width: 1921px) and (max-width: 2565px) {
+    .book-call {
+      font-size: 25px;
+      font-size: 1.5625rem; } }
+  @media only screen and (min-width: 1601px) and (max-width: 1920px) {
+    .book-call {
+      font-size: 28px;
+      font-size: 1.75rem; } }
+  @media only screen and (min-width: 1281px) and (max-width: 1600px) {
+    .book-call {
+      font-size: 26px;
+      font-size: 1.625rem; } }
+  @media only screen and (min-width: 1006px) and (max-width: 1280px) {
+    .book-call {
+      font-size: 22px;
+      font-size: 1.375rem; } }
+  @media only screen and (min-width: 756px) and (max-width: 1005px) {
+    .book-call {
+      font-size: 20px;
+      font-size: 1.25rem; } }
+  @media only screen and (min-width: 376px) and (max-width: 755px) {
+    .book-call {
+      font-size: 18px;
+      font-size: 1.125rem; } }
+  @media only screen and (min-width: 321px) and (max-width: 375px) {
+    .book-call {
+      font-size: 14px;
+      font-size: 0.875rem; } }
+  @media only screen and (max-width: 320px) {
+    .book-call {
+      font-size: 13px;
+      font-size: 0.8125rem; } }
+
+/* line 59, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/contact */
+.book-call:hover {
+  border: 10px double #02518c;
+  border-radius: 1.6em;
+  color: #02518c;
+  background-color: #fff;
+  transition: all 0.5s;
+  box-shadow: 0px 0px 0px 0px #e86767; }
+
+/* line 72, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/contact */
+#content {
+  width: 800px;
+  padding: 50px;
+  margin: 0 auto;
+  display: block;
+  font-size: 1.2em; }
+
+/* line 80, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/contact */
+#content h2 {
+  line-height: 1.5em; }
+
+/* Add curved borders to various elements */
+/* line 91, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/contact */
+#contactForm, .statusMessage, input[type="submit"], input[type="button"] {
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px; }
+
+/* Style for the contact form and status messages */
+/* line 99, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/contact */
+#contactForm, .statusMessage {
+  color: #666;
+  background-color: #ebedf2;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #dfe1e5), color-stop(1, #f2f4fa));
+  background: -moz-linear-gradient(center bottom, #dfe1e5 0%, #ebedf2 100%);
+  border: 1px solid #aaa;
+  -moz-box-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
+  opacity: 0.99; }
+
+/* The form dimensions */
+/* line 114, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/contact */
+#contactForm {
+  width: 40em;
+  height: 37.7em;
+  padding: 0 1.5em 1.5em 1.5em;
+  margin: 0 auto; }
+
+/* Position the form in the middle of the window (if JavaScript is enabled) */
+/* line 124, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/contact */
+#contactForm.positioned {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-top: auto;
+  margin-bottom: auto; }
+
+/* Dimensions and position of the status messages */
+/* line 137, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/contact */
+.statusMessage {
+  display: none;
+  margin: auto;
+  width: 30em;
+  height: 2em;
+  padding: 1.5em;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0; }
+
+/* line 150, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/contact */
+.statusMessage p {
+  text-align: center;
+  margin: 0;
+  padding: 0; }
+
+/* HEADER IS THE TCA LOGO , SMALL VERSION */
+/* line 158, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/contact */
+.form-logo-container {
+  margin: 1.5em auto; }
+
+/* line 161, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/contact */
+.form-logo {
+  max-width: 30%; }
+
+/* Give form elements consistent margin, padding and line height */
+/* line 166, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/contact */
+#contactForm ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+/* line 172, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/contact */
+#contactForm ul li {
+  margin: 0.9em 0 0 0;
+  padding: 0; }
+
+/* line 177, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/contact */
+#contactForm input, #contactForm label {
+  line-height: 1em; }
+
+/* The field labels */
+/* line 183, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/contact */
+label {
+  display: block;
+  float: left;
+  clear: left;
+  text-align: right;
+  width: 28%;
+  padding: 0.4em 0 0 0;
+  margin: 0.15em 0.5em 0 0;
+  font-weight: bold;
+  font-family: 'Roboto Slab', serif; }
+
+/* line 195, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/contact */
+.form-upcoming {
+  font-weight: 700;
+  font-family: 'Roboto Slab', serif;
+  font-size: 12.5px;
+  font-size: 0.78125rem;
+  color: #8d8d8d; }
+
+/* line 202, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/contact */
+.form-upcoming p {
+  line-height: 1.5em;
+  margin: 0; }
+
+/* line 207, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/contact */
+.form-upcoming-head {
+  font-weight: 700;
+  font-size: 15.6px;
+  font-size: 0.975rem;
+  color: #666; }
+
+/* The fields */
+/* line 214, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/contact */
+input, textarea {
+  display: block;
+  margin: 0;
+  padding: 0.4em;
+  width: 67%;
+  font-family: 'Roboto Slab', serif;
+  font-size: 1em;
+  border: 1px solid #aaa;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 4px inset;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 4px inset;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 1px 4px inset;
+  background: #fff; }
+
+/* line 231, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/contact */
+textarea {
+  height: 13em;
+  line-height: 1.5em;
+  resize: none; }
+
+/* Place a border around focused fields, and hide the inner shadow */
+/* line 240, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/contact */
+#contactForm *:focus {
+  border: 1px solid #3f6c95;
+  outline: none;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none; }
+
+/* Display correctly filled-in fields with a green background */
+/* line 251, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/contact */
+input:valid, textarea:valid {
+  background: #fff; }
+
+/* The Send and Cancel buttons */
+/* line 258, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/contact */
+input[type="submit"], input[type="button"] {
+  display: inline-block;
+  margin: 4em -1em 0 2em;
+  width: 7em;
+  padding: 0.7em;
+  border: 3px solid #fff;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+  border-radius: 7px;
+  -moz-box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.8);
+  -webkit-box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.8);
+  color: #fff;
+  background: #02518c;
+  font-size: 1em;
+  line-height: 1em;
+  font-weight: bold;
+  opacity: 0.7;
+  font-size: 18px;
+  font-size: 1.125rem;
+  -webkit-appearance: none;
+  -moz-transition: opacity 0.5s;
+  -webkit-transition: opacity 0.5s;
+  -o-transition: opacity 0.5s;
+  transition: opacity 0.5s; }
+
+/* line 285, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/contact */
+input[type="submit"]:hover, input[type="submit"]:active {
+  cursor: pointer;
+  opacity: 1;
+  border-radius: 100px;
+  transition: all 0.6s; }
+
+/* line 292, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/contact */
+input[type="button"]:hover, input[type="button"]:active {
+  cursor: pointer;
+  opacity: 1;
+  border-radius: 7px;
+  transition: all 0.2s; }
+
+/* line 299, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/contact */
+input[type="submit"]:active, input[type="button"]:active {
+  color: #333;
+  background: #eee;
+  -moz-box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.8) inset;
+  -webkit-box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.8) inset;
+  box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.8) inset; }
+
+/* line 307, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/contact */
+input[type="button"] {
+  background: #c33a1a;
+  width: 2.1em;
+  padding: 0.29em;
+  font-family: inherit;
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: 700;
+  position: relative;
+  top: 0;
+  left: 0;
+  border-radius: 50px;
+  border: 3px solid #fff;
+  text-align: center; }
+
+/* line 322, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/contact */
+form {
+  position: relative; }
+
+/* line 326, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/contact */
+.span-check-instruct {
+  position: relative;
+  top: 0.5em;
+  left: 0.2em;
+  font-family: 'Roboto Slab', serif; }
+
+/* line 333, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/contact */
+.checkboxFive {
+  width: 20px;
+  margin: -30px 140px;
+  position: relative; }
+
+/* line 338, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/contact */
+.checkboxFive label {
+  cursor: pointer;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: -0.4em;
+  left: -0.1em;
+  background: #eee;
+  border: 1px solid #acacac;
+  border-radius: 6px; }
+
+/* line 349, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/contact */
+.checkboxFive label:after {
+  opacity: 0.2;
+  content: '';
+  position: absolute;
+  width: 14px;
+  height: 5px;
+  background: transparent;
+  top: 7px;
+  left: 6px;
+  border: 2.8px solid #000;
+  border-top: none;
+  border-right: none;
+  border-radius: 6px;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg); }
+
+/**
+ * Create the hover event of the tick
+ */
+/* line 373, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/contact */
+.checkboxFive label:hover::after {
+  opacity: 0.7; }
+
+/**
+ * Create the checkbox state for the tick
+ */
+/* line 380, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/contact */
+.checkboxFive input[type=checkbox]:checked + label:after {
+  opacity: 1; }
+
+/* line 388, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/contact */
+.schedule-triangle {
+  width: 0;
+  height: 0;
+  border-color: #fff transparent transparent transparent;
+  display: inline-block;
+  border-style: solid;
+  border-width: 45px 45px 0 45px; }
+  @media only screen and (max-width: 768px) {
+    .schedule-triangle {
+      border-width: 25px 25px 0 25px; } }
+
+/* line 397, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/contact */
+.schedule-triangle-position {
+  text-align: center; }
+
+/* line 403, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/contact */
+.pagebottom-block {
+  background-color: rgba(237, 237, 237, 0.96);
+  text-align: center; }
+
+/* line 408, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/contact */
+.pagebottom-logo-container {
+  text-align: center;
+  margin: 2% 0 2%; }
+
+/* line 412, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/contact */
+.page-bottom-logo {
+  max-width: 27%;
+  display: inline-block; }
+  @media only screen and (min-width: 1006px) and (max-width: 1280px) {
+    .page-bottom-logo {
+      max-width: 37%; } }
+  @media only screen and (min-width: 756px) and (max-width: 1005px) {
+    .page-bottom-logo {
+      max-width: 47%; } }
+  @media only screen and (min-width: 376px) and (max-width: 755px) {
+    .page-bottom-logo {
+      max-width: 57%; } }
+  @media only screen and (min-width: 321px) and (max-width: 375px) {
+    .page-bottom-logo {
+      max-width: 67%; } }
+  @media only screen and (max-width: 320px) {
+    .page-bottom-logo {
+      max-width: 67%; } }
+
+/* line 422, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/contact */
+.bottom-subhead {
+  color: #02518c;
+  font-weight: 700;
+  margin: 0; }
+
+/* line 427, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/contact */
+.bottom-info {
+  width: 30%;
+  margin: 1% auto;
+  padding-bottom: 3%;
+  font-family: 'Roboto Slab', serif;
+  color: #3f6c95;
+  font-weight: 400;
+  line-height: 1.5em; }
+  @media only screen and (min-width: 1921px) and (max-width: 2565px) {
+    .bottom-info {
+      font-size: 20px;
+      font-size: 1.25rem; } }
+  @media only screen and (min-width: 1601px) and (max-width: 1920px) {
+    .bottom-info {
+      font-size: 18px;
+      font-size: 1.125rem; } }
+  @media only screen and (min-width: 1281px) and (max-width: 1600px) {
+    .bottom-info {
+      font-size: 17px;
+      font-size: 1.0625rem; } }
+  @media only screen and (min-width: 1006px) and (max-width: 1280px) {
+    .bottom-info {
+      font-size: 15px;
+      font-size: 0.9375rem; } }
+  @media only screen and (min-width: 756px) and (max-width: 1005px) {
+    .bottom-info {
+      font-size: 14px;
+      font-size: 0.875rem;
+      width: 60%; } }
+  @media only screen and (min-width: 376px) and (max-width: 755px) {
+    .bottom-info {
+      font-size: 13px;
+      font-size: 0.8125rem;
+      width: 80%; } }
+  @media only screen and (min-width: 321px) and (max-width: 375px) {
+    .bottom-info {
+      font-size: 11px;
+      font-size: 0.6875rem;
+      width: 90%; } }
+  @media only screen and (max-width: 320px) {
+    .bottom-info {
+      font-size: 10px;
+      font-size: 0.625rem;
+      width: 90%; } }
+
+/* line 445, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/contact */
+.bottom-stripe-light {
+  height: 10px;
+  background-color: rgba(160, 160, 160, 0.18); }
+
+/* line 449, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/contact */
+.bottom-stripe {
+  height: 30px;
+  background-color: rgba(116, 116, 116, 0.46); }
+
+/* line 25, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/style.scss */
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* line 33, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/style.scss */
+img {
+  max-width: 100%; }
+
+/* Other transform properties here */
+/*# sourceMappingURL=style.css.map */

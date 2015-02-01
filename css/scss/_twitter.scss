@@ -1,0 +1,111 @@
+.twitter-container {
+	position: relative;
+	margin: 10% 24% 15% 24%;
+	@include breakpoint(laptop) { margin: 10% 18% 15% 18%; }
+	@include breakpoint(netbook) { margin: 10% 16% 18% 16%; }
+	@include breakpoint(medium) { margin: 10% 14% 15% 14%; }
+	@include breakpoint(small) { margin: 10% 9% 20% 10%; }
+	@include breakpoint(newp) { margin: 10% 8.5% 25% 10%; }
+	@include breakpoint(oldp) { margin: 10% 7.5% 25% 10%; }
+}
+
+.twitter-head {
+	color: $headingblue;
+	line-height: 1.4;
+}
+
+.h1-subhead {
+	line-height: 1.4;
+	color: $headingblue;
+	margin-bottom: 3.5%;
+	
+}
+
+
+// TRIANGLES FOR TWEET BOXES TO FAKE THE CUT OFF CORNER
+.tweet-box:after {
+	content: "";
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 30px 30px 0;
+	border-color: transparent #ffffff transparent transparent;
+	top: 0px;
+	right: 0px;
+	position: absolute;
+	z-index: 5;
+	@include breakpoint(medium) { border-width: 0 27px 27px 0; }
+	@include breakpoint(small) { border-width: 0 20px 20px 0; }
+	@include breakpoint(newp) { border-width: 0 20px 20px 0; }
+	@include breakpoint(oldp) { border-width: 0 20px 20px 0; }
+}
+
+.tweet-box {
+	background-color: $darkblue;
+	box-sizing: border-box;
+	padding: 3% 5% 3% 5%;
+	@include clearfix;
+	box-shadow: -7px 7px 0px 0px $pinkred-dull;
+	border-top-right-radius: 0;
+	position: relative;
+	z-index: 0;
+	margin-bottom: 5%;
+}
+
+.tweet {
+	display: inline-block;
+	width: 100%;
+	box-sizing: border-box;
+	padding-right: 2%;
+	line-height: 1.4;
+	color: $lightblue;
+	font-family: $h3-font-fam;
+	font-weight: 400;
+		@include breakpoint(hires) { @include font-size(24px); }
+		@include breakpoint(desktop) { @include font-size(22px); }
+		@include breakpoint(laptop) { @include font-size(21px); }
+		@include breakpoint(netbook) { @include font-size(18px); }
+		@include breakpoint(medium) { @include font-size(16px); }
+		@include breakpoint(small) { @include font-size(13px); }
+		@include breakpoint(newp) { @include font-size(11px); }
+		@include breakpoint(oldp) { @include font-size(10px); }
+}
+
+.tweet-time {
+	margin-top: 1%;
+	box-sizing: border-box;
+	text-align: right;
+	color: $pinkred;
+	font-family: $h2-font-fam;
+	font-size: 46px;
+	@include breakpoint(hires) { font-size: 100%; }
+		@include breakpoint(hires) { @include font-size(23px); }
+		@include breakpoint(desktop) { @include font-size(23px); }
+		@include breakpoint(laptop) { @include font-size(23px); }
+		@include breakpoint(netbook) { @include font-size(19px); }
+		@include breakpoint(medium) { @include font-size(17px); }
+		@include breakpoint(small) { @include font-size(14px); }
+		@include breakpoint(newp) { @include font-size(12px); }
+		@include breakpoint(oldp) { @include font-size(10px); }
+}
+
+ // TESTING AREA
+.twitter-end-divider {
+	height: 10px;
+	width: 100%;
+	background-color: $pinkred-dull;
+	position: relative;
+}
+
+.twitter-triangle {
+	width: 0;
+	height: 0;
+	border-color: $pinkred-dull transparent transparent transparent;
+	display: inline-block;
+	border-style: solid;
+	border-width: 45px 45px 0 45px;
+	@include breakpoint(mobile-flip) { border-width: 25px 25px 0 25px; }
+}
+.twitter-triangle-position {
+	text-align: center;
+}
