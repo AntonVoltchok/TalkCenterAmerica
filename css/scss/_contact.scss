@@ -9,6 +9,10 @@
 	text-align: center;
 }
 
+.contact-header-wrapper {
+	margin-bottom: 11%;
+}
+
 .instructions {
 	border: 10px solid $darkblue;
 	box-shadow: -7px 7px 0px 0px $pinkred-dull;
@@ -36,7 +40,7 @@
  
 .book-call {
 	display: inline-block;
-	margin-top: -1%;
+	margin-top: .1em;
 	border: 10px double #fff;
 	box-shadow: -4px 4px 0px 0px $pinkred-dull; 
 	border-radius: .5em;
@@ -62,24 +66,25 @@
 	color: $headingblue;
 	background-color: #fff;
 	transition: all .5s;
-
-		box-shadow: 0px 0px 0px 0px $pinkred-dull;
+	box-shadow: 0px 0px 0px 0px $pinkred-dull;
 }
 
 
 // THE CONTACT FORM POP UP
 
+/*
 #content {
-  width: 800px;
+  width: 800px; 
   padding: 50px;
   margin: 0 auto;
-  display: block;
+  display: block; 
   font-size: 1.2em;
 }
 
 #content h2 {
-  line-height: 1.5em;
+  line-height: 1.5em; 
 }
+*/
 
 
 // ----------------------
@@ -94,7 +99,6 @@
   border-radius: 10px;
 }
 
-
 /* Style for the contact form and status messages */
 #contactForm, .statusMessage {
   color: #666;
@@ -108,32 +112,32 @@
   opacity: .99;
 }
 
-
 /* The form dimensions */
-
 #contactForm {
   width: 40em;
   height: 37.7em;
   padding: 0 1.5em 1.5em 1.5em;
   margin: 0 auto;
+	@include breakpoint(mobile-flip) {
+		width: 315px;
+		height: 480px;
+		font-size: 10px;
+		border-radius: 2px;
+		}	
 }
 
-
 /* Position the form in the middle of the window (if JavaScript is enabled) */
-
 #contactForm.positioned {
   position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  margin-top: auto;
+  margin-top: auto; 
   margin-bottom: auto;
 }
 
-
 /* Dimensions and position of the status messages */
-
 .statusMessage {
   display: none;
   margin: auto;
@@ -157,9 +161,13 @@
 /* HEADER IS THE TCA LOGO , SMALL VERSION */
 .form-logo-container {
 	margin: 1.5em auto;
+	@include breakpoint(mobile-flip) { margin: 5em auto 3em;	}
+	@include breakpoint(oldp) { margin: 8.8em auto 1.3em; }
 }
 .form-logo {
 	max-width: 30%;
+	@include breakpoint(mobile-flip) { max-width: 37%; }	
+	@include breakpoint(oldp) { max-width: 34%; }
 }
 
 /* Give form elements consistent margin, padding and line height */
@@ -168,16 +176,13 @@
   margin: 0;
   padding: 0;
 }
-
 #contactForm ul li {
   margin: .9em 0 0 0;
   padding: 0;
 }
-
 #contactForm input, #contactForm label {
   line-height: 1em;
 }
-
 
 /* The field labels */
 label {
@@ -190,6 +195,7 @@ label {
   margin: .15em .5em 0 0;
   font-weight: bold;
 	font-family: $p-font-fam;
+	@include breakpoint(mobile-flip) { width: 25%;	}
 }
 
 .form-upcoming {
@@ -197,17 +203,20 @@ label {
 	font-family: $p-font-fam;	
 	@include font-size(12.5px);
 	color: #8d8d8d;
+	@include breakpoint(mobile-flip) { font-size: 10px;	}
 }
 
 .form-upcoming p {
 	line-height: 1.5em;
 	margin: 0;
+	@include breakpoint(mobile-flip) { line-height: 1.29em;	}
 }
 
 .form-upcoming-head {
 	font-weight: 700;
 	@include font-size(15.6px);
 	color: #666;
+	@include breakpoint(mobile-flip) { font-size: 10px;	}
 }
 
 /* The fields */
@@ -234,9 +243,7 @@ textarea {
   resize: none;
 }
 
-
 /* Place a border around focused fields, and hide the inner shadow */
-
 #contactForm *:focus {
   border: 1px solid $midblue;
   outline: none;
@@ -245,27 +252,19 @@ textarea {
   -webkit-box-shadow: none;
 }
 
-
 /* Display correctly filled-in fields with a green background */
-
 input:valid, textarea:valid {
-  background: #fff;
+  background: #f7fcff;
 }
 
-
 /* The Send and Cancel buttons */
-
 input[type="submit"], input[type="button"] {
   display: inline-block;
   margin: 4em -1em 0 2em;
   width: 7em;
   padding: .7em;
   border: 3px solid #fff;
-  -moz-border-radius: 7px;
-  -webkit-border-radius: 7px;  
   border-radius: 7px;
-  -moz-box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
-  -webkit-box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
   box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
   color: #fff;
   background: $headingblue;
@@ -275,10 +274,13 @@ input[type="submit"], input[type="button"] {
   opacity: .7;
 	@include font-size(18px);
   -webkit-appearance: none;
-  -moz-transition: opacity .5s;
-  -webkit-transition: opacity .5s;
-  -o-transition: opacity .5s;
-  transition: opacity .5s;
+  -webkit-transition: opacity .5s;  
+	transition: opacity .5s;
+	@include breakpoint(mobile-flip) { 
+	  font-size: 13px;
+		width: 6em;
+		margin: 0 -.8em 0 1.1em;
+	}
 }
 
 input[type="submit"]:hover,
@@ -317,6 +319,11 @@ input[type="button"] {
 	border-radius: 50px;
 	border: 3px solid #fff;
 	text-align: center;
+	@include breakpoint(mobile-flip) { 
+		margin-top: 69px;
+		font-size: 12px;	
+	}
+	@include breakpoint(oldp) { margin-top: 55px; }
 }
 
 form {
@@ -328,12 +335,14 @@ form {
 	top: .5em;
 	left: .2em;
 	font-family: $p-font-fam;
+	@include breakpoint(mobile-flip) { top: .5em; left: 1.7em; }
 }
 
 .checkboxFive {
 	width: 20px;
 	margin: -30px 140px;
 	position: relative;
+	@include breakpoint(mobile-flip) { margin: -24px 32px; }
 }
 .checkboxFive label {
 	cursor: pointer;
@@ -345,6 +354,7 @@ form {
 	background: #eee;
 	border: 1px solid #acacac;
 	border-radius: 6px;
+
 }
 .checkboxFive label:after {
 	opacity: 0.2;
@@ -367,25 +377,23 @@ form {
 	transform: rotate(-45deg);
 }
 
-/**
- * Create the hover event of the tick
- */
+// Create the hover event of the tick
 .checkboxFive label:hover::after {
 	opacity: 0.7;
 }
 
-/**
- * Create the checkbox state for the tick
- */
+// Create the checkbox state for the tick
 .checkboxFive input[type=checkbox]:checked + label:after {
 	opacity: 1;
 }
+
+
 
 // -----------------
 // PAGE BOTTOM BLOCK
 // -----------------
 
-.schedule-triangle {
+.bottom-triangle {
 	width: 0;
 	height: 0;
 	border-color: #fff transparent transparent transparent;
@@ -394,7 +402,7 @@ form {
 	border-width: 45px 45px 0 45px;
 	@include breakpoint(mobile-flip) { border-width: 25px 25px 0 25px; }
 }
-.schedule-triangle-position {
+.bottom-triangle-position {
 	text-align: center;
 }
 
@@ -450,3 +458,4 @@ form {
 	height: 30px;
 	background-color: rgba(116, 116, 116, 0.46);
 }
+

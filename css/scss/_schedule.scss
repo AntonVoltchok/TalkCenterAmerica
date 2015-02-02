@@ -4,9 +4,10 @@
 	@include breakpoint(mobile-flip) {
 		border-top: 15px solid rgba(76, 76, 76, 0.23);
 		border-bottom: 15px solid rgba(76, 76, 76, 0.23); 
+	
 		} 
 }
-
+ 
 .video-ratio-box {
 	height: 720px;
 	width: 100%;
@@ -18,10 +19,10 @@
 	@include breakpoint(desktop) { height: 710px; }
 	@include breakpoint(laptop) { height: 500px; }
 	@include breakpoint(netbook) { height: 420px; }
-	@include breakpoint(medium) { height: 325px; }
-	@include breakpoint(small) { height: 260px; }
-	@include breakpoint(newp) { height: 200px; }
-	@include breakpoint(oldp) { height: 150px; }
+	@include breakpoint(medium) { height: 285px; }
+	@include breakpoint(small) { height: 200px; }
+	@include breakpoint(newp) { height: 150px; }
+	@include breakpoint(oldp) { height: 120px; }
 } 
 
 .schedule-h2 {
@@ -37,29 +38,32 @@
 
 
 .covervid-wrapper {
-    position: absolute;
+  position: absolute;
 	top: 0;
 	left: 0;
 	bottom: 0;
 	right: 0;
 	width: 100%;
 	height: 100%;
+	background-image: url(../../img/diane1.jpg);
+	background-size: cover;
 }
 
 .schedule-head {
-    position: absolute;
-    width: 100%;
-    height: 37%;
-    top: -25%;
-    bottom: 0;
-    margin: auto;
-    opacity: .99;
-	text-shadow: 4px 5px 20px #000000;
+	position: absolute;
+	width: 100%;
+	height: 37%;
+	top: -25%;
+	bottom: 0;
+	margin: auto;
+	opacity: .99;
+	text-shadow: -3px 3px 1px $headingblue; 
 	font-family: $h1-font-fam;
 	font-weight: 400;
-    text-align: center;
+	text-align: center;
 	line-height: 1.2;
 	color: #fff;
+	z-index: 100;
 	@include breakpoint(hires) { @include font-size(84px); }
 	@include breakpoint(desktop) { @include font-size(64px); }
 	@include breakpoint(laptop) { @include font-size(54px); }
@@ -68,16 +72,17 @@
 	@include breakpoint(small) { @include font-size(30px); }
 	@include breakpoint(newp) { @include font-size(26px); }
 	@include breakpoint(oldp) { @include font-size(20px); }
+	@include breakpoint(mobile-flip) { text-shadow: -2px 2px 1px $darkblue;  } 
 }
 .schedule-content {
-    position: absolute;
-    top: 10%; 
+	position: absolute;
+	top: 10%; 
 	left: 0;
-    bottom: 0; 
+	bottom: 0; 
 	right: 0;
-    width: 80%;
+	width: 80%;
 	margin: auto;
-    height: 18%;
+	height: 18%;
 	z-index: 11;
 	text-align: center;
 	color: red;
@@ -85,22 +90,25 @@
 .schedule-dates {
 	color: #fff;
 	opacity: .99;
-	font-family: $h2-font-fam;
+	font-family: $p-font-fam;
 	font-weight: 400;
 	width: 100%;
-
+	text-shadow: -3px 3px 1px $headingblue; 
+	@include breakpoint(mobile-flip) { text-shadow: -2px 2px 1px $darkblue;  } 
 }
 .video-content-overlay {
-    background-color: #000;
-    opacity: 0.65;
-    position: absolute;
-    top: 36%; 
+	background-color: #000;
+	opacity: 0.65;
+	position: absolute;
+	top: 36%; 
 	left: 0;
-    bottom: 0; 
+	bottom: 0; 
 	right: 0;
-    width: 100%;
-    height: 31%;
+	width: 100%;
+	height: 28%;
 	z-index: 10;
+	@include breakpoint(mobile-flip) { height: 100%; top: 0; background-color: #9f9f9f; opacity: 0.35;}
+	@include breakpoint(newp) { height: 100%; top: 0; background-color: #9f9f9f; opacity: 0.35; }	
 }
 
 .schedule-triangle {
@@ -117,5 +125,7 @@
 }
 
 
-
+.covervid-video {
+	@include breakpoint(mobile-flip) { display: none; }
+}
 

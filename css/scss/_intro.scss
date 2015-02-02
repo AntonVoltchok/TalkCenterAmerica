@@ -25,7 +25,7 @@
 }
 // DON'T REALLY NEED THIS CLASS TO CENTER TEXT, BUT NEED TO
 // KEEP IT SO FITTEXT.JS WILL WORK (NEEDS CHILD CONTAINER)
-.intro-hero-text {
+.intro-hero-text { 
 	text-align: center;
 }
 
@@ -51,8 +51,8 @@
 		float: none;
 		}
 }
-// TOP  MOST HEADING FOR SKYPE BOX
-.skype-box-head {
+// TOP MOST HEADING FOR SKYPE BOX
+.skype-box-head { 
 	box-sizing: border-box;
 	margin: 0 0 8%;
 	font-family: $h2-font-fam;
@@ -252,10 +252,7 @@
 	box-sizing: border-box;
 	border-radius: 100%;
 	-webkit-transition: all .2s ease-in-out;
-    -moz-transition: all .2s ease-in-out;
-    -o-transition: all .2s ease-in-out;
-    -ms-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
 	box-shadow:  0 0 10px 5px rgba(0, 0, 0, 0.56);
 	border: 10px solid rgba(255, 255, 255, 0.31);
 }
