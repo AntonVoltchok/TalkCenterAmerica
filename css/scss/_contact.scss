@@ -424,7 +424,7 @@ form {
 		@include breakpoint(small) { max-width: 57%; }
 		@include breakpoint(newp) { max-width: 67%; }
 		@include breakpoint(oldp) { max-width: 67%; }	
-	display: inline-block;
+		display: inline-block;
 }
 
 .bottom-subhead {
@@ -438,7 +438,7 @@ form {
 	padding-bottom: 3%;
 	font-family: $p-font-fam;
 	color: $midblue;
-		font-weight: 400;
+	font-weight: 400;
 	line-height: 1.5em;
 		@include breakpoint(hires) { @include font-size(20px); }
 		@include breakpoint(desktop) { @include font-size(18px); } 

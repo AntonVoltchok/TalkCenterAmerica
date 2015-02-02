@@ -204,8 +204,8 @@ h1 {
   line-height: 1.72em; }
   @media only screen and (min-width: 1921px) and (max-width: 2565px) {
     h1 {
-      font-size: 64px;
-      font-size: 4rem; } }
+      font-size: 70px;
+      font-size: 4.375rem; } }
   @media only screen and (min-width: 1601px) and (max-width: 1920px) {
     h1 {
       font-size: 64px;
@@ -526,11 +526,11 @@ a:hover {
 .intro-wrapper {
   background-color: #fff;
   margin: 3% 5% 0; }
-  /* line 78, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/modules/utility */
+  /* line 69, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/modules/utility */
   .intro-wrapper:before, .intro-wrapper:after {
     content: "";
     display: table; }
-  /* line 82, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/modules/utility */
+  /* line 73, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/modules/utility */
   .intro-wrapper:after {
     clear: both; }
   @media only screen and (max-width: 768px) {
@@ -566,11 +566,11 @@ a:hover {
   box-sizing: border-box;
   width: 100%;
   padding: 0 2%; }
-  /* line 78, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/modules/utility */
+  /* line 69, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/modules/utility */
   .intro-split-content:before, .intro-split-content:after {
     content: "";
     display: table; }
-  /* line 82, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/modules/utility */
+  /* line 73, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/modules/utility */
   .intro-split-content:after {
     clear: both; }
 
@@ -627,11 +627,11 @@ a:hover {
       text-align: center;
       transition: all 1s; } }
 
-/* line 78, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/modules/utility */
+/* line 69, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/modules/utility */
 .skype-box-split:before, .skype-box-split:after {
   content: "";
   display: table; }
-/* line 82, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/modules/utility */
+/* line 73, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/modules/utility */
 .skype-box-split:after {
   clear: both; }
 
@@ -834,11 +834,14 @@ a:hover {
   box-sizing: border-box;
   border-radius: 100%;
   -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.56);
   border: 10px solid rgba(255, 255, 255, 0.31); }
 
-/* line 261, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/intro */
+/* line 264, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/intro */
 .play-button-animate {
   position: absolute;
   top: 28.25%;
@@ -853,60 +856,60 @@ a:hover {
   animation: burst 5s infinite linear; }
 
 @-webkit-keyframes burst {
-  /* line 276, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/intro */
+  /* line 279, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/intro */
   0% {
     opacity: 0.8; }
 
-  /* line 277, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/intro */
+  /* line 280, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/intro */
   25% {
     opacity: 0.2; }
 
-  /* line 278, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/intro */
+  /* line 281, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/intro */
   35% {
     opacity: 0; }
 
-  /* line 279, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/intro */
+  /* line 282, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/intro */
   45% {
     -webkit-transform: scale(1.7);
     transform: scale(1.7);
     opacity: 0; }
 
-  /* line 284, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/intro */
+  /* line 287, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/intro */
   100% {
     opacity: 0; } }
 
 @keyframes burst {
-  /* line 288, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/intro */
+  /* line 291, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/intro */
   0% {
     opacity: 0.8; }
 
-  /* line 289, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/intro */
+  /* line 292, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/intro */
   35% {
     opacity: 0; }
 
-  /* line 290, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/intro */
+  /* line 293, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/intro */
   45% {
     -webkit-transform: scale(1.7);
     -ms-transform: scale(1.7);
     transform: scale(1.7);
     opacity: 0; }
 
-  /* line 296, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/intro */
+  /* line 299, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/intro */
   100% {
     opacity: 0; } }
 
-/* line 301, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/intro */
+/* line 304, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/intro */
 img {
   max-width: 100%; }
 
-/* line 306, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/intro */
+/* line 309, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/intro */
 #open-popup {
   padding: 0;
   cursor: pointer; }
 
 @media screen and (max-width: 700px) {
   @-webkit-keyframes 'flip-point' {
-    /* line 317, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/intro */
+    /* line 320, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/intro */
     0%, 16% {
       -ms-transform: rotate(90deg);
       /* IE 9 */
@@ -914,7 +917,7 @@ img {
       /* Chrome, Safari, Opera */
       transform: rotate(90deg); }
 
-    /* line 322, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/intro */
+    /* line 325, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/intro */
     25% {
       -ms-transform: rotate(0deg);
       /* IE 9 */
@@ -922,31 +925,31 @@ img {
       /* Chrome, Safari, Opera */
       transform: rotate(0deg); }
 
-    /* line 327, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/intro */
+    /* line 330, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/intro */
     42% {
       -webkit-transform: rotateX(0deg);
       /* Chrome, Safari, Opera */
       transform: rotateX(0deg); }
 
-    /* line 331, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/intro */
+    /* line 334, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/intro */
     48% {
       -webkit-transform: rotateX(0deg);
       /* Chrome, Safari, Opera */
       transform: rotateX(0deg); }
 
-    /* line 335, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/intro */
+    /* line 338, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/intro */
     52% {
       -webkit-transform: rotateY(0deg);
       /* Chrome, Safari, Opera */
       transform: rotateY(0deg); }
 
-    /* line 339, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/intro */
+    /* line 342, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/intro */
     57% {
       -webkit-transform: rotateX(0deg);
       /* Chrome, Safari, Opera */
       transform: rotateX(0deg); }
 
-    /* line 343, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/intro */
+    /* line 346, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/intro */
     93% {
       -ms-transform: rotate(0deg);
       /* IE 9 */
@@ -954,7 +957,7 @@ img {
       /* Chrome, Safari, Opera */
       transform: rotate(0deg); }
 
-    /* line 349, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/intro */
+    /* line 352, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/intro */
     99%, 100% {
       -ms-transform: rotate(90deg);
       /* IE 9 */
@@ -1242,11 +1245,11 @@ img {
   position: relative;
   z-index: 0;
   margin-bottom: 5%; }
-  /* line 78, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/modules/utility */
+  /* line 69, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/modules/utility */
   .tweet-box:before, .tweet-box:after {
     content: "";
     display: table; }
-  /* line 82, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/modules/utility */
+  /* line 73, C:/Users/The Box/Desktop/CODING/_TalkCenter/css/scss/modules/utility */
   .tweet-box:after {
     clear: both; }
 
@@ -1257,7 +1260,7 @@ img {
   box-sizing: border-box;
   padding-right: 2%;
   line-height: 1.4;
-  color: #beddfc;
+  color: #fff;
   font-family: 'Roboto Slab', serif;
   font-weight: 400; }
   @media only screen and (min-width: 1921px) and (max-width: 2565px) {

@@ -24,6 +24,7 @@
 *********************************************/
 
 
+
 @mixin breakpoint($point) {
   @if $point == hires {
     @media only screen and (min-width: 1921px) and (max-width: 2565px) { @content; }
@@ -49,23 +50,13 @@
   @else if $point == oldp {
     @media only screen and (max-width: 320px)  { @content; }
   }	
-	
   // WIDTH ORDER FOR NONE LAYOUT RESIZING: MEDIUM, MOBILE-FLIP, SMALL, NEWP, OLDP	
   @else if $point == mobile-flip {
     @media only screen and (max-width: 768px)  { @content; }
-  }
-	
-	
+  }	
 }
 
 
-
-
-
-
-
-
-//only screen and (min-width: 1024px) {
 
 
 

@@ -380,7 +380,7 @@ h3 {
 
 /* line 13, C:/Users/The Box/Desktop/CODING/_TalkCenter/blog/scss/base-styles */
 .tca-logo {
-  margin: 1% auto 2.3%; }
+  margin: 0.5% auto 2.3%; }
   @media only screen and (max-width: 768px) {
     .tca-logo {
       margin: 2.3% auto 2.3%; } }
@@ -450,7 +450,7 @@ h3 {
 /* line 46, C:/Users/The Box/Desktop/CODING/_TalkCenter/blog/scss/base-styles */
 .ces-img {
   width: 100%;
-  margin: 0% 0 5%;
+  margin: 0% 0 4%;
   border-radius: 3px;
   box-shadow: 0px 10px 0px -6px rgba(0, 0, 0, 0.15); }
   @media only screen and (max-width: 768px) {
@@ -470,7 +470,7 @@ h3 {
   font-weight: 400;
   line-height: 1.5em;
   border-radius: 3px;
-  box-shadow: 0px 10px 0px -5px rgba(0, 0, 0, 0.15); }
+  box-shadow: 0px 10px 0px -6px rgba(0, 0, 0, 0.15); }
   @media only screen and (min-width: 1921px) and (max-width: 2565px) {
     .blog-content-container {
       font-size: 18px;
@@ -512,8 +512,8 @@ h3 {
 
 /* line 78, C:/Users/The Box/Desktop/CODING/_TalkCenter/blog/scss/base-styles */
 .grad_line {
-  margin-left: 1%;
-  margin-right: 1%;
+  margin-left: 15%;
+  margin-right: 15%;
   margin-top: 4px;
   margin-bottom: 4px;
   height: 1px;
@@ -569,7 +569,7 @@ h3 {
   font-weight: 400;
   line-height: 0.1em;
   border-radius: 3px;
-  box-shadow: 0px 10px 0px -5px rgba(0, 0, 0, 0.15); }
+  box-shadow: 0px 10px 0px -6px rgba(0, 0, 0, 0.15); }
   @media only screen and (max-width: 768px) {
     .social-container {
       margin: 5% 15%;
@@ -598,7 +598,7 @@ h3 {
 
 /* line 156, C:/Users/The Box/Desktop/CODING/_TalkCenter/blog/scss/base-styles */
 .comment-container {
-  font-weight: 700;
+  font-weight: 300;
   margin: 6% 37% -1%;
   padding: 25px 5px;
   background-color: #fff;

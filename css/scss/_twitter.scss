@@ -58,7 +58,7 @@
 	box-sizing: border-box;
 	padding-right: 2%;
 	line-height: 1.4;
-	color: $lightblue;
+	color: #fff;
 	font-family: $h3-font-fam;
 	font-weight: 400;
 		@include breakpoint(hires) { @include font-size(24px); }

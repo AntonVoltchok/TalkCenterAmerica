@@ -16,7 +16,7 @@ h1 {
 	color: $darkgrey;
 	font-weight: 400;
 	line-height: 1.72em;
-		@include breakpoint(hires) { @include font-size(64px); }
+		@include breakpoint(hires) { @include font-size(70px); }
 		@include breakpoint(desktop) { @include font-size(64px); } 
 		@include breakpoint(laptop) { @include font-size(54px); } 
 		@include breakpoint(netbook) { @include font-size(44px); } 
